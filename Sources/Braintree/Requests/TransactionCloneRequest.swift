@@ -1,0 +1,15 @@
+//
+//  TransactionCloneRequest.swift
+//  Braintree
+//
+//  Created by Mihael Isaev on 28/09/2018.
+//
+
+import Foundation
+import Vapor
+
+public final class TransactionCloneRequest: Content {
+    private var amount: Double
+    private var channel: String
+    private var transactionOptionsCloneRequest: TransactionOptionsCloneRequest
+}

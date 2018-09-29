@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class IndividualAddressRequest: Content {
+public final class IndividualAddressRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var parent: IndividualRequest
     
     //    private enum CodingKeys : String, CodingKey {

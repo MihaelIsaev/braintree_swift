@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class AndroidPayDetails: Codable {
+public class AndroidPayDetails: BraintreeContent {
+    public static var key: String = ""
+    
     public var bin: String
     public var expirationMonth: String
     public var expirationYear: String

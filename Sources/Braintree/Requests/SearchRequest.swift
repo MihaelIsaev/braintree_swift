@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class SearchRequest: Content {
+public final class SearchRequest: BraintreeContent {
+    public static var key: String = ""
+    
     public var criteria: [String: [SearchCriteria]]
     public var rangeCriteria: [String: [SearchCriteria]]
     public var multiValueCriteria: [String: SearchCriteria]

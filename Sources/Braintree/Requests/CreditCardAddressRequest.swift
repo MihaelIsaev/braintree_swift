@@ -6,9 +6,9 @@
 //
 
 import Foundation
-import Vapor
 
-public final class CreditCardAddressRequest: Content {
+public final class CreditCardAddressRequest: BraintreeContent {
+    public static var key: String = ""
     public var updateExisting: Bool?
     
     public init (updateExisting: Bool? = nil) {

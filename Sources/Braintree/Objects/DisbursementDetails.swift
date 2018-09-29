@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class DisbursementDetails: Codable {
+public class DisbursementDetails: BraintreeContent {
+    public static var key: String = ""
+    
     private var disbursementDate: Date
     private var settlementCurrencyIsoCode: String
     private var fundsHeld: Bool

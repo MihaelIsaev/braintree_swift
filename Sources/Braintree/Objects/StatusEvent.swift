@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class StatusEvent: Codable {
+public class StatusEvent: BraintreeContent {
+    public static var key: String = ""
+    
     private var amount: Double
     private var status: Transaction.Status
     private var timestamp: Date

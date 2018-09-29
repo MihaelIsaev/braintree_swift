@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class PayPalAccount: Codable {
+public class PayPalAccount: BraintreeContent {
+    public static var key: String = ""
+    
     private var email: String
     private var token: String
     private var billingAgreementId: String

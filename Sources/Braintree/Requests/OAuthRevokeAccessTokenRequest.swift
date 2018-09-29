@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class OAuthRevokeAccessTokenRequest: Content {
+public final class OAuthRevokeAccessTokenRequest: BraintreeContent {
+    public static var key: String = ""
+    
     public var token: String
     
     //    private enum CodingKeys : String, CodingKey {

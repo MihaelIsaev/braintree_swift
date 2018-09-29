@@ -6,9 +6,9 @@
 //
 
 import Foundation
-import Vapor
 
-public final class CreditCardVerificationRequest: Content {
+public final class CreditCardVerificationRequest: BraintreeContent {
+    public static var key: String = ""
     private var creditCardRequest: CreditCardVerificationCreditCardRequest
     private var optionsRequest: CreditCardVerificationOptionsRequest
     

@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class AccountUpdaterDailyReport: Codable {
+public class AccountUpdaterDailyReport: BraintreeContent {
+    public static var key: String = ""
+    
     public var reportDate: Date?
     public var reportUrl: String
     

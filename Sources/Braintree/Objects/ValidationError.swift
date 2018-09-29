@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class ValidationError: Codable {
+public class ValidationError: BraintreeContent {
+    public static var key: String = ""
+    
     private var attribute: String
     private var code: ValidationErrorCode
     private var message: String

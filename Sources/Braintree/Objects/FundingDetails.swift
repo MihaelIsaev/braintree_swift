@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class FundingDetails: Codable {
+public class FundingDetails: BraintreeContent {
+    public static var key: String = ""
+    
     private var destination: MerchantAccount.FundingDestination
     private var email: String
     private var mobilePhone: String

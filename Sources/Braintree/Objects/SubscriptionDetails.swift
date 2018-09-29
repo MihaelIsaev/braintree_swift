@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class SubscriptionDetails: Codable {
+public class SubscriptionDetails: BraintreeContent {
+    public static var key: String = ""
+    
     private var billingPeriodEndDate: Date
     private var billingPeriodStartDate: Date
     

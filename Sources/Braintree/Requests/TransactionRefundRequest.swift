@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class TransactionRefundRequest: Content {
+public final class TransactionRefundRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var amount: Double
     private var orderId: String
     

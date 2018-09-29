@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class UsBankAccountVerification: Codable {
+public class UsBankAccountVerification: BraintreeContent {
+    public static var key: String = ""
+    
     public enum Status: String, Codable {
         case failed
         case getewayRejected = "gateway_rejected"

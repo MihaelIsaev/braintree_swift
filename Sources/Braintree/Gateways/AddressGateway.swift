@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Vapor
 
 public class AddressGateway {
     public var http: Http
@@ -17,11 +16,11 @@ public class AddressGateway {
         self.configuration = configuration
     }
     
-    public func create(customerId: String, request: AddressRequest) throws -> Future<Address> {
+    public func create(customerId: String, request: AddressRequest) throws -> Http.Future<Address> {
         return try http.post(try configuration.merchantPath() + "/customers/" + customerId + "/addresses", payload: request)
     }
     
-    public func delete(customerId: String, id: String) throws -> Future<Address> {
+    public func delete(customerId: String, id: String) throws -> Http.Future<Address> {
         return try http.delete(try configuration.merchantPath() + "/customers/" + customerId + "/addresses/" + id)
     }
 }

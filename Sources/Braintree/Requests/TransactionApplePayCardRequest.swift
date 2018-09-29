@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class TransactionApplePayCardRequest: Content {
+public final class TransactionApplePayCardRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var number: String
     private var cardholderName: String
     private var cryptogram: String

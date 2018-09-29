@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class VisaCheckoutCardDetails: Codable {
+public class VisaCheckoutCardDetails: BraintreeContent {
+    public static var key: String = ""
+    
     private var bin: String
     private var callId: String
     private var cardType: String

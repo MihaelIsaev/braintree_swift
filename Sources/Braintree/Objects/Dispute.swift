@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class Dispute: Codable {
+public class Dispute: BraintreeContent {
+    public static var key: String = ""
+    
     public enum Status: Int, Codable {
         case open, lost, won, unrecognized, accepted, disputed, expired
     }

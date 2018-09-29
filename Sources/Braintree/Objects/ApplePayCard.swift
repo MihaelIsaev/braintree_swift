@@ -8,6 +8,8 @@
 import Foundation
 
 public class ApplePayCard: PaymentMethod {
+    public static var key: String = ""
+    
     public var bin: String
     public var cardType: String
     public var last4: String

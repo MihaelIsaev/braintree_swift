@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class BinData: Codable {
+public class BinData: BraintreeContent {
+    public static var key: String = ""
+    
     private var commercial: String
     private var countryOfIssuance: String
     private var debit: String

@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class SubscriptionTransactionOptionsRequest: Content {
+public final class SubscriptionTransactionOptionsRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var submitForSettlement: Bool
     private var parent: SubscriptionTransactionRequest
     

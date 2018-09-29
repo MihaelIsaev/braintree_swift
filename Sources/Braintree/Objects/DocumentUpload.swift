@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class DocumentUpload: Codable {
+public class DocumentUpload: BraintreeContent {
+    public static var key: String = ""
+    
     public enum Kind: String, Codable {
         case evidenceDocument = "evidence_document"
     }

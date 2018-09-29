@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class TransactionOptionsCloneRequest: Content {
+public final class TransactionOptionsCloneRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var parent: TransactionCloneRequest
     private var submitForSettlement: Bool
     

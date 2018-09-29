@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class AchMandate: Codable {
+public class AchMandate: BraintreeContent {
+    public static var key: String = ""
+    
     public var text: String
     public var acceptedAt: Date
     

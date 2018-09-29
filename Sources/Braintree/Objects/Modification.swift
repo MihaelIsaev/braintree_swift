@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class Modification: Codable {
+public class Modification: BraintreeContent {
+    public static var key: String = ""
+    
     public var amount: Double?
     public var createdAt: Date?
     public var currentBillingCycle: Int?

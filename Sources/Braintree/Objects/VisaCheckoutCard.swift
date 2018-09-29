@@ -8,6 +8,8 @@
 import Foundation
 
 public class VisaCheckoutCard: PaymentMethod {
+    public static var key: String = ""
+    
     private var billingAddress: Address
     private var bin: String
     private var callId: String

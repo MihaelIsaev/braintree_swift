@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class TransactionSearchRequest: Content {
+public final class TransactionSearchRequest: BraintreeContent {
+    public static var key: String = ""
+    
     
     
     //    private enum CodingKeys : String, CodingKey {

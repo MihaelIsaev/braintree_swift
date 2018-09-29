@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class OAuthResult: Codable {
+public class OAuthResult: BraintreeContent {
+    public static var key: String = ""
+    
     private var result: Bool
     
 //    private enum CodingKeys : String, CodingKey {

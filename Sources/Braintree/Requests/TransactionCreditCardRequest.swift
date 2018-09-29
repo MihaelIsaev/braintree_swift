@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class TransactionCreditCardRequest: Content {
+public final class TransactionCreditCardRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var cardholderName: String
     private var cvv: String
     private var expirationDate: String

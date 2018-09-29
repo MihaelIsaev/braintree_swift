@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class CreditCardVerification: Codable {
+public class CreditCardVerification: BraintreeContent {
+    public static var key: String = ""
+    
     public enum Status: Int, Codable {
         case failed, gatewayRejected, processorDeclined, unrecognized, verified
     }

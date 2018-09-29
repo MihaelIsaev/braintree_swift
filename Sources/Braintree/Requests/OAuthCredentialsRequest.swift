@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class OAuthCredentialsRequest: Content {
+public final class OAuthCredentialsRequest: BraintreeContent {
+    public static var key: String = ""
+    
     public var code: String
     public var scope: String
     public var grantType: String

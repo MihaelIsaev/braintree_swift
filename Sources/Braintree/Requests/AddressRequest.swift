@@ -6,9 +6,9 @@
 //
 
 import Foundation
-import Vapor
 
-public final class AddressRequest: Content {
+public final class AddressRequest: BraintreeContent {
+    public static var key: String = ""
     public var firstName: String
     public var lastName: String
     public var company: String

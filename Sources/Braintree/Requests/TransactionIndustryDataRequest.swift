@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class TransactionIndustryDataRequest: Content {
+public final class TransactionIndustryDataRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private let parent: TransactionIndustryRequest
     private var folioNumber: String
     private var checkInDate: String

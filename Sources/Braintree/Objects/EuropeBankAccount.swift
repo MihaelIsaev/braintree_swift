@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class EuropeBankAccount: Codable {
+public class EuropeBankAccount: BraintreeContent {
+    public static var key: String = ""
+    
     private var token: String
     private var isDefault: Bool
     private var maskedIban: String

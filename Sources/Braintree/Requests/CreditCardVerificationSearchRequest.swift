@@ -6,9 +6,9 @@
 //
 
 import Foundation
-import Vapor
 
-public final class CreditCardVerificationSearchRequest: Content {
+public final class CreditCardVerificationSearchRequest: BraintreeContent {
+    public static var key: String = ""
     private var criteria: [String: SearchCriteria]
     private var multipleValueCriteria: [String: SearchCriteria]
     private var rangeCriteria: [String: [SearchCriteria]]

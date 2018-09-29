@@ -6,9 +6,9 @@
 //
 
 import Foundation
-import Vapor
 
-public final class DisputeSearchRequest: Content {
+public final class DisputeSearchRequest: BraintreeContent {
+    public static var key: String = ""
     public var criteria: [String: [SearchCriteria]]
     public var rangeCriteria: [String: [SearchCriteria]]
     public var multiValueCriteria: [String: SearchCriteria]

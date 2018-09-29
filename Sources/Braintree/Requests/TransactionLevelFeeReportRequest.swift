@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class TransactionLevelFeeReportRequest: Content {
+public final class TransactionLevelFeeReportRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var date: String
     private var merchantAccountId: String
     

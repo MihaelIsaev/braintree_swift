@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class RiskDataCustomerRequest: Content {
+public final class RiskDataCustomerRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var customerBrowser: String
     private var customerIP: String
     private var parent: CustomerRequest

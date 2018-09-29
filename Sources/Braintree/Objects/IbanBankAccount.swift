@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class IbanBankAccount: Codable {
+public class IbanBankAccount: BraintreeContent {
+    public static var key: String = ""
+    
     private var accountHolderName: String
     private var ibanAccountNumberLast4: String
     private var ibanCountry: String

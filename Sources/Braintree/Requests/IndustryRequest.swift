@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class IndustryRequest: Content {
+public final class IndustryRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var industryType: Transaction.IndustryType
     private var data: TransactionIndustryDataRequest
     

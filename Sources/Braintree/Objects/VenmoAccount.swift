@@ -8,6 +8,8 @@
 import Foundation
 
 public class VenmoAccount: PaymentMethod {
+    public static var key: String = ""
+    
     public var token: String
     public var username: String
     public var venmoUserId: String

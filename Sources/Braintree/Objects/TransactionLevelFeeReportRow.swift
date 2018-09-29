@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class TransactionLevelFeeReportRow: Codable {
+public class TransactionLevelFeeReportRow: BraintreeContent {
+    public static var key: String = ""
+    
     // Shared fields.
     private var merchantAccountId: String
     private var transactionId: String

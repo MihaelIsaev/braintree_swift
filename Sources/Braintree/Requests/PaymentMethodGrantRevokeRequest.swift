@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class PaymentMethodGrantRevokeRequest: Content {
+public final class PaymentMethodGrantRevokeRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var sharedPaymentMethodToken: String
     
     //    private enum CodingKeys : String, CodingKey {

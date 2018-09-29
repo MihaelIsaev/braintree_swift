@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class CoinbaseAccount: Codable {
+public class CoinbaseAccount: BraintreeContent {
+    public static var key: String = ""
+    
     private var userId: String
     private var userEmail: String
     private var userName: String

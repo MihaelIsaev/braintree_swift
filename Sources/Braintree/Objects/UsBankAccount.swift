@@ -8,6 +8,8 @@
 import Foundation
 
 public class UsBankAccount: PaymentMethod {
+    public static var key: String = ""
+    
     private var routingNumber: String
     private var last4: String
     private var accountType: String

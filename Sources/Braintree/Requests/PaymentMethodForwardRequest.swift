@@ -6,10 +6,11 @@
 //
 
 import Foundation
-import Vapor
 
 @available(*, deprecated)
-public final class PaymentMethodForwardRequest: Content {
+public final class PaymentMethodForwardRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var token: String
     private var receivingMerchantId: String
     

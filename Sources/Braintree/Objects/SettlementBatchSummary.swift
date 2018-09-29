@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class SettlementBatchSummary: Codable {
+public class SettlementBatchSummary: BraintreeContent {
+    public static var key: String = ""
+    
     private var records: [[String: String]]
     
 //    private enum CodingKeys : String, CodingKey {

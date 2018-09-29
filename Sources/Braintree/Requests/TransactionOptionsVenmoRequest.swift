@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class TransactionOptionsVenmoRequest: Content {
+public final class TransactionOptionsVenmoRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var parent: TransactionOptionsRequest
     private var profileId: String
     

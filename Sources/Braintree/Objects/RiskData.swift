@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class RiskData: Codable {
+public class RiskData: BraintreeContent {
+    public static var key: String = ""
+    
     private var id: String
     private var decision: String
     private var deviceDataCaptured: Bool

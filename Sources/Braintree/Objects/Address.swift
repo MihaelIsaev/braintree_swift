@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class Address: Codable {
+public class Address: BraintreeContent {
+    public static var key: String = ""
+    
     public var id: String
     public var customerId: String
     public var firstName: String

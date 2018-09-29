@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class FacilitatorDetails: Codable {
+public class FacilitatorDetails: BraintreeContent {
+    public static var key: String = ""
+    
     private var oauthApplicationClientId: String
     private var oauthApplicationName: String
     private var sourcePaymentMethodToken: String

@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class ConnectedMerchantStatusTransitioned: Codable {
+public class ConnectedMerchantStatusTransitioned: BraintreeContent {
+    public static var key: String = ""
+    
     private var merchantPublicId: String
     private var oauthApplicationClientId: String
     private var status: String

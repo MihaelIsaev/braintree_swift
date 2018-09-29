@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class TransactionDetails: Codable {
+public class TransactionDetails: BraintreeContent {
+    public static var key: String = ""
+    
     private var id: String
     private var amount: Double
     

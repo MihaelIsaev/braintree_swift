@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class SettlementBatchSummaryRequest: Content {
+public final class SettlementBatchSummaryRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var settlementDate: Date
     private var groupByCustomField: String
     

@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class TransactionCloneRequest: Content {
+public final class TransactionCloneRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var amount: Double
     private var channel: String
     private var transactionOptionsCloneRequest: TransactionOptionsCloneRequest

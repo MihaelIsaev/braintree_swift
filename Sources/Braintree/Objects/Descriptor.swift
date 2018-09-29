@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class Descriptor: Codable {
+public class Descriptor: BraintreeContent {
+    public static var key: String = ""
+    
     private var name: String
     private var phone: String
     private var url: String

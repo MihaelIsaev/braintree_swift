@@ -6,9 +6,9 @@
 //
 
 import Foundation
-import Vapor
 
-public final class ClientTokenRequest: Content {
+public final class ClientTokenRequest: BraintreeContent {
+    public static var key: String = ""
     static var defaultVersion = 2
     
     private var customerId: String

@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class ModificationsRequest: Content {
+public final class ModificationsRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var parent: SubscriptionRequest
     private var name: String
     private var adds: [AddModificationRequest]

@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class SearchCriteria: Codable {
+public class SearchCriteria: BraintreeContent {
+    public static var key: String = ""
+    
     
     
 //    private enum CodingKeys : String, CodingKey {

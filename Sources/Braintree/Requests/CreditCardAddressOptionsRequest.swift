@@ -6,9 +6,9 @@
 //
 
 import Foundation
-import Vapor
 
-public final class CreditCardAddressOptionsRequest: Content {
+public final class CreditCardAddressOptionsRequest: BraintreeContent {
+    public static var key: String = ""
     public var updateExisting: Bool?
     
     private enum CodingKeys : String, CodingKey {

@@ -6,9 +6,9 @@
 //
 
 import Foundation
-import Vapor
 
-public final class CreditCardVerificationBillingAddressRequest: Content {
+public final class CreditCardVerificationBillingAddressRequest: BraintreeContent {
+    public static var key: String = ""
     private var parent: CreditCardVerificationCreditCardRequest
     private var company: String
     private var countryCodeAlpha2: String

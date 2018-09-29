@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class ApplePayDetails: Codable {
+public class ApplePayDetails: BraintreeContent {
+    public static var key: String = ""
+    
     public var cardType: String
     public var paymentInstrumentName: String
     public var sourceDescription: String

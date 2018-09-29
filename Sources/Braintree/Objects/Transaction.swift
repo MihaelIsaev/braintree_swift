@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class Transaction: Codable {
+public class Transaction: BraintreeContent {
+    public static var key: String = ""
+    
     public enum CreatedUsing: String, Codable {
         case fullInformation = "full_information"
         case token, unrecognized

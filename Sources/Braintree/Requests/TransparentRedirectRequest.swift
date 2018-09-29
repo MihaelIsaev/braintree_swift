@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class TransparentRedirectRequest: Content {
+public final class TransparentRedirectRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var id: String
     
     //    private enum CodingKeys : String, CodingKey {

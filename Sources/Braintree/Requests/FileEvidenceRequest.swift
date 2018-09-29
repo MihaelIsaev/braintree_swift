@@ -6,9 +6,9 @@
 //
 
 import Foundation
-import Vapor
 
-public final class FileEvidenceRequest: Content {
+public final class FileEvidenceRequest: BraintreeContent {
+    public static var key: String = ""
     private var documentId: String
     private var category: String
     

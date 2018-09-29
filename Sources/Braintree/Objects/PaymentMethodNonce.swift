@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class PaymentMethodNonce: Codable {
+public class PaymentMethodNonce: BraintreeContent {
+    public static var key: String = ""
+    
     private var isDefault: Bool
     private var publicId: String
     private var isLocked: Bool

@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class VenmoAccountDetails: Codable {
+public class VenmoAccountDetails: BraintreeContent {
+    public static var key: String = ""
+    
     private var token: String
     private var username: String
     private var venmoUserId: String

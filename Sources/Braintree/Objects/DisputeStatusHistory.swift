@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class DisputeStatusHistory: Codable {
+public class DisputeStatusHistory: BraintreeContent {
+    public static var key: String = ""
+    
     private var disbursementDate: Date
     private var effectiveDate: Date
     private var timestamp: Date

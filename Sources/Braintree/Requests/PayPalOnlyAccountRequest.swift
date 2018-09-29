@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class PayPalOnlyAccountRequest: Content {
+public final class PayPalOnlyAccountRequest: BraintreeContent {
+    public static var key: String = ""
+    
     public var clientId: String
     public var clientSecret: String
     

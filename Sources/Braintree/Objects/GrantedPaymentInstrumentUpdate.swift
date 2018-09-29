@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class GrantedPaymentInstrumentUpdate: Codable {
+public class GrantedPaymentInstrumentUpdate: BraintreeContent {
+    public static var key: String = ""
+    
     private var grantOwnerMerchantId: String
     private var grantRecipientMerchantId: String
     private var paymentMethodNonce: String

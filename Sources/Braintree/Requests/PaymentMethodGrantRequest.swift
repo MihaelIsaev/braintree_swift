@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class PaymentMethodGrantRequest: Content {
+public final class PaymentMethodGrantRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var sharedPaymentMethodToken: String
     private var allowVaulting: Bool
     private var includeBillingPostalCode: Bool

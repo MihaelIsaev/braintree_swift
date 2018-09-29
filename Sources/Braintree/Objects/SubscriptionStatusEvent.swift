@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class SubscriptionStatusEvent: Codable {
+public class SubscriptionStatusEvent: BraintreeContent {
+    public static var key: String = ""
+    
     private var balance: Double
     private var currencyIsoCode: String
     private var planId: String

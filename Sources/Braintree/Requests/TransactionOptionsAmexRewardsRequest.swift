@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class TransactionOptionsAmexRewardsRequest: Content {
+public final class TransactionOptionsAmexRewardsRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var parent: TransactionOptionsRequest
     private var points: String
     private var currencyAmount: String

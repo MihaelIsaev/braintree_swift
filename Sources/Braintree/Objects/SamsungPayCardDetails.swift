@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class SamsungPayCardDetails: Codable {
+public class SamsungPayCardDetails: BraintreeContent {
+    public static var key: String = ""
+    
     private var bin: String
     private var cardType: String
     private var cardholderName: String

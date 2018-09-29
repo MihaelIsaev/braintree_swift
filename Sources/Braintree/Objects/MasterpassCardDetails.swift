@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class MasterpassCardDetails: Codable {
+public class MasterpassCardDetails: BraintreeContent {
+    public static var key: String = ""
+    
     private var bin: String
     private var cardType: String
     private var cardholderName: String

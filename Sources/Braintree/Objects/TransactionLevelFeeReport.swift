@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class TransactionLevelFeeReport: Codable {
+public class TransactionLevelFeeReport: BraintreeContent {
+    public static var key: String = ""
+    
     private var rows: [TransactionLevelFeeReportRow] = []
     private var valid: Bool
     

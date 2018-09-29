@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol PaymentMethod: Codable {
+public protocol PaymentMethod: BraintreeContent {
     var token: String { get }
     var isDefault: Bool? { get }
     var imageUrl: String { get }

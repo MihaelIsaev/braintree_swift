@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class TransactionOptionsRequest: Content {
+public final class TransactionOptionsRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var addBillingAddressToPaymentMethod: Bool
     private var holdInEscrow: Bool
     private var parent: TransactionRequest

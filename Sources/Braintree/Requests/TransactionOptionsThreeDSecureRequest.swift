@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class TransactionOptionsThreeDSecureRequest: Content {
+public final class TransactionOptionsThreeDSecureRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var parent: TransactionOptionsRequest
     private var required: Bool
     

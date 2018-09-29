@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class UsBankAccountVerificationSearchRequest: Content {
+public final class UsBankAccountVerificationSearchRequest: BraintreeContent {
+    public static var key: String = ""
+    
     
     
     //    private enum CodingKeys : String, CodingKey {

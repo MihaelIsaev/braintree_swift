@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class AuthorizationAdjustment: Codable {
+public class AuthorizationAdjustment: BraintreeContent {
+    public static var key: String = ""
+    
     private var amount: Double
     private var success: Bool
     private var timestamp: Date

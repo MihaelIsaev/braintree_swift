@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class DisputeEvidence: Codable {
+public class DisputeEvidence: BraintreeContent {
+    public static var key: String = ""
+    
     private var createdAt: Date
     private var sentToProcessorAt: Date
     private var comment: String

@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class MerchantAccount: Codable {
+public class MerchantAccount: BraintreeContent {
+    public static var key: String = ""
+    
     public enum Status: Int, Codable {
         case pending, active, suspended, unrecognized
     }

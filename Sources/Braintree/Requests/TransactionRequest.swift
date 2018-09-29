@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class TransactionRequest: Content {
+public final class TransactionRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var amount: Double
     private var billingAddressRequest: TransactionAddressRequest
     private var deviceData: String

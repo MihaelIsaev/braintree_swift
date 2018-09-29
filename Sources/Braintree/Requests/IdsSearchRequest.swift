@@ -6,11 +6,9 @@
 //
 
 import Foundation
-import Vapor
 
-public final class IdsSearchRequest: Content {
-    
-    
+public final class IdsSearchRequest: BraintreeContent {
+    public static var key: String = ""
     //    private enum CodingKeys : String, CodingKey {
     //        case
     //    }

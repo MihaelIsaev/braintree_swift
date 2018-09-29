@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class CreditCard: Codable {
+public final class CreditCard: BraintreeContent {
+    public static var key: String = "credit-card"
+    
     public enum CardType: String, Codable {
         case amex = "American Express"
         case carteBlanche = "Carte Blanche"
@@ -64,7 +66,7 @@ public class CreditCard: Codable {
         case unknown = "Unknown"
     }
     
-    public var billingAddress: Address
+    public var billingAddress: Address?
     public var bin: String
     public var cardholderName: String
     public var cardType: String
@@ -87,15 +89,40 @@ public class CreditCard: Codable {
     public var countryOfIssuance: String
     public var issuingBank: String
     public var uniqueNumberIdentifier: String
-    public var subscriptions: [Subscription]
+    //public var subscriptions: [Subscription]
     public var token: String
-    public var createdAt: Date
-    public var updatedAt: Date
-    public var verification: CreditCardVerification
+    public var createdAt: Date?
+    public var updatedAt: Date?
+    //public var verification: CreditCardVerification
     
-//    private enum CodingKeys : String, CodingKey {
-//        case
-//    }
+    private enum CodingKeys : String, CodingKey {
+        case bin
+        case cardholderName = "cardholder-name"
+        case cardType = "card-type"
+        case customerId = "customer-id"
+        case isDefault = "default"
+        case isVenmoSdk = "venmo-sdk"
+        case expirationMonth = "expiration-month"
+        case expirationYear = "expiration-year"
+        case isExpired = "expired"
+        case customerLocation = "customer-location"
+        case last4 = "last-4"
+        case uniqueNumberIdentifier = "unique-number-identifier"
+        case token
+        case createdAt = "created-at"
+        case updatedAt = "updated-at"
+        case billingAddress = "billing-address"
+        case prepaid
+        case payroll
+        case durbinRegulated = "durbin-regulated"
+        case debit
+        case commercial
+        case healthcare
+        case countryOfIssuance = "country-of-issuance"
+        case issuingBank = "issuing-bank"
+        case productId = "product-id"
+        case imageUrl = "image-url"
+    }
     
     public var xpirationDate: String {
         return expirationMonth + "/" + expirationYear

@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class Plan: Codable {
+public class Plan: BraintreeContent {
+    public static var key: String = ""
+    
     public enum DurationUnit: Int, Codable {
         case day, month, unrecognized
     }

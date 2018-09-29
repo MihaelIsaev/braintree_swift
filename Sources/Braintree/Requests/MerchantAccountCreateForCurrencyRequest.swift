@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class MerchantAccountCreateForCurrencyRequest: Content {
+public final class MerchantAccountCreateForCurrencyRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var currency: String
     private var id: String
     

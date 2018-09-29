@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class SubscriptionRequest: Content {
+public final class SubscriptionRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var addOnsRequest: ModificationsRequest
     private var billingDayOfMonth: Int64
     private var descriptorRequest: SubscriptionDescriptorRequest

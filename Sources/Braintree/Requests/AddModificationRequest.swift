@@ -6,9 +6,9 @@
 //
 
 import Foundation
-import Vapor
 
-public final class AddModificationRequest: Content {
+public final class AddModificationRequest: BraintreeContent {
+    public static var key: String = ""
     private var inheritedFromId: String
     
     //    private enum CodingKeys : String, CodingKey {

@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class TransactionLineItem: Codable {
+public class TransactionLineItem: BraintreeContent {
+    public static var key: String = ""
+    
     public enum Kind: String, Codable {
         case debit, credit, unrecognized
     }

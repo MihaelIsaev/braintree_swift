@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class OAuthCredentials: Codable {
+public class OAuthCredentials: BraintreeContent {
+    public static var key: String = ""
+    
     private var accessToken: String
     private var refreshToken: String
     private var tokenType: String

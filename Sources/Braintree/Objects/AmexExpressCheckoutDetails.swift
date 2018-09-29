@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class AmexExpressCheckoutDetails: Codable {
+public class AmexExpressCheckoutDetails: BraintreeContent {
+    public static var key: String = ""
+    
     public var token: String
     public var cardType: String
     public var bin: String

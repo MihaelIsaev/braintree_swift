@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class SubscriptionOptionsRequest: Content {
+public final class SubscriptionOptionsRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var doNotInheritAddOnsOrDiscounts: Bool
     private var parent: SubscriptionRequest
     private var prorateCharges: Bool

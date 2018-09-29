@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class SEPAClientTokenRequest: Content {
+public final class SEPAClientTokenRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var mandateType: String
     private var mandateAcceptanceLocation: String
     

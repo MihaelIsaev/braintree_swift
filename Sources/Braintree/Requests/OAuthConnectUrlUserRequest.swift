@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class OAuthConnectUrlUserRequest: Content {
+public final class OAuthConnectUrlUserRequest: BraintreeContent {
+    public static var key: String = ""
+    
     public var country: String
     public var email: String
     public var firstName: String

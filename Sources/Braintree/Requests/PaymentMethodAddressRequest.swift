@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class PaymentMethodAddressRequest: Content {
+public final class PaymentMethodAddressRequest: BraintreeContent {
+    public static var key: String = ""
+    
     public var firstName: String
     public var lastName: String
     public var company: String

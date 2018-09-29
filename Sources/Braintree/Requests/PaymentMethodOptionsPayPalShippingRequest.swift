@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class PaymentMethodOptionsPayPalShippingRequest: Content {
+public final class PaymentMethodOptionsPayPalShippingRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var parent: PaymentMethodOptionsPayPalRequest
     
     //    private enum CodingKeys : String, CodingKey {

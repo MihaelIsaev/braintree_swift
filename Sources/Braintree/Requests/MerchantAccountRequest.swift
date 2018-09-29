@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class MerchantAccountRequest: Content {
+public final class MerchantAccountRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var applicantDetails: ApplicantDetailsRequest
     private var individual: IndividualRequest
     private var business: BusinessRequest

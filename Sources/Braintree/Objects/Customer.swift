@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class Customer: Codable {
+public class Customer: BraintreeContent {
+    public static var key: String = ""
+    
     private var createdAt: Date
     private var updatedAt: Date
     private var company: String

@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class TransactionLineItemRequest: Content {
+public final class TransactionLineItemRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var parent: TransactionRequest
     private var quantity: Double
     private var name: String

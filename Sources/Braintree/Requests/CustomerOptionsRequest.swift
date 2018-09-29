@@ -6,9 +6,9 @@
 //
 
 import Foundation
-import Vapor
 
-public final class CustomerOptionsRequest: Content {
+public final class CustomerOptionsRequest: BraintreeContent {
+    public static var key: String = ""
     private var parent: CustomerRequest
     private var customerOptionsPayPalRequest: CustomerOptionsPayPalRequest
     

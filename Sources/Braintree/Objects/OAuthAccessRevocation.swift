@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class OAuthAccessRevocation: Codable {
+public class OAuthAccessRevocation: BraintreeContent {
+    public static var key: String = ""
+    
     private var merchantId: String
     private var oauthApplicationClientId: String
     

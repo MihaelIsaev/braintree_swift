@@ -7,7 +7,9 @@
 
 import Foundation
 
-public class ThreeDSecureInfo: Codable {
+public class ThreeDSecureInfo: BraintreeContent {
+    public static var key: String = ""
+    
     private var liabilityShifted: Bool
     private var liabilityShiftPossible: Bool
     private var enrolled: String

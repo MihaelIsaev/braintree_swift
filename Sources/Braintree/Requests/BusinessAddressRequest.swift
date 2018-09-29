@@ -6,12 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
 //TODO
-public final class BusinessAddressRequest: Content {
-    
-    
+public final class BusinessAddressRequest: BraintreeContent {
+    public static var key: String = ""
     //    private enum CodingKeys : String, CodingKey {
     //        case
     //    }

@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class SubscriptionTransactionRequest: Content {
+public final class SubscriptionTransactionRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var amount: Double
     private var subscriptionId: String
     private var subscriptionTransactionOptionsRequest: SubscriptionTransactionOptionsRequest

@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class TransactionThreeDSecurePassThruRequest: Content {
+public final class TransactionThreeDSecurePassThruRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var parent: TransactionRequest
     private var eciFlag: String
     private var cavv: String

@@ -6,9 +6,9 @@
 //
 
 import Foundation
-import Vapor
 
-public final class DescriptorRequest: Content {
+public final class DescriptorRequest: BraintreeContent {
+    public static var key: String = ""
     private var name: String
     private var phone: String
     private var url: String

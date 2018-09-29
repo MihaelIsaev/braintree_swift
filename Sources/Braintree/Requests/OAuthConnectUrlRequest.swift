@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import Vapor
 
-public final class OAuthConnectUrlRequest: Content {
+public final class OAuthConnectUrlRequest: BraintreeContent {
+    public static var key: String = ""
+    
     private var merchantId: String
     private var scope: String
     private var clientId: String

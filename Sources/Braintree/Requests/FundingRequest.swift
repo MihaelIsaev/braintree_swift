@@ -6,9 +6,9 @@
 //
 
 import Foundation
-import Vapor
 
-public final class FundingRequest: Content {
+public final class FundingRequest: BraintreeContent {
+    public static var key: String = ""
     private var destination: MerchantAccount.FundingDestination
     private var email: String
     private var mobilePhone: String

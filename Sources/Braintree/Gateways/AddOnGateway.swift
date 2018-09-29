@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Vapor
 
 public class AddOnGateway {
     public var http: Http
@@ -17,7 +16,7 @@ public class AddOnGateway {
         self.configuration = configuration
     }
     
-    public func all() throws -> Future<[AddOn]> {
-        return try http.get("/add_ons")
-    }
+//    public func all() throws -> HTTP.Future<[AddOn]> {
+//        return try http.get("/add_ons")
+//    }
 }

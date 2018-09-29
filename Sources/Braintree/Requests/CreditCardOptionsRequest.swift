@@ -26,4 +26,20 @@ public final class CreditCardOptionsRequest: Content {
         case updateExistingToken = "update-existing-token"
         case venmoSdkSession = "venmo-sdk-session"
     }
+    
+    public init (verifyCard: Bool? = nil,
+                    verificationAmount: String,
+                    makeDefault: Bool? = nil,
+                    failOnDuplicatePaymentMethod: Bool? = nil,
+                    verificationMerchantAccountId: String,
+                    updateExistingToken: String,
+                    venmoSdkSession: String) {
+        self.verifyCard = verifyCard
+        self.verificationAmount = verificationAmount
+        self.makeDefault = makeDefault
+        self.failOnDuplicatePaymentMethod = failOnDuplicatePaymentMethod
+        self.verificationMerchantAccountId = verificationMerchantAccountId
+        self.updateExistingToken = updateExistingToken
+        self.venmoSdkSession = venmoSdkSession
+    }
 }

@@ -12,14 +12,14 @@ public class Configuration {
     private let timeout: TimeInterval = 60
     private let connectTimeout: TimeInterval = 60
     //private let proxy: Proxy
-    private var accessToken: String?
+    var accessToken: String?
     
-    private var clientId: String?
-    private var clientSecret: String?
+    var clientId: String?
+    var clientSecret: String?
     
-    private var merchantId: String?
-    private var publicKey: String?
-    private var privateKey: String?
+    var merchantId: String?
+    var publicKey: String?
+    var privateKey: String?
     
     public let logger: Logger
     
@@ -29,13 +29,13 @@ public class Configuration {
     
     public init(environment: BraintreeEnvironment, merchantId: String, publicKey: String, privateKey: String) throws {
         self.environment = environment
-    
+        
         guard merchantId.count > 0 else { throw BraintreeError(.configuration, reason: "merchantId needs to be set") }
         self.merchantId = merchantId
         
         guard publicKey.count > 0 else { throw BraintreeError(.configuration, reason: "publicKey needs to be set") }
         self.publicKey = publicKey
-    
+        
         guard privateKey.count > 0 else { throw BraintreeError(.configuration, reason: "privateKey needs to be set") }
         self.privateKey = privateKey
         self.logger = Logger()

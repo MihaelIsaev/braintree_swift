@@ -153,6 +153,15 @@
           "revision": "149af03348f60ac8b84defdf277112d62fd8c704",
           "version": "1.0.2"
         }
+      },
+      {
+        "package": "XMLParsing",
+        "repositoryURL": "https://github.com/MihaelIsaev/XMLParsing.git",
+        "state": {
+          "branch": "master",
+          "revision": "fc91ba35d6385f23d5a96d727d55f034f46e643f",
+          "version": null
+        }
       }
     ]
   },

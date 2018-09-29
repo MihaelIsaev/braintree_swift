@@ -9,24 +9,24 @@ import Foundation
 import Vapor
 
 public final class CreditCardRequest: Content {
-    public var cardholderName: String
-    public var cvv: String
-    public var expirationMonth: String
-    public var expirationYear: String
-    public var expirationDate: String
-    public var number: String
+    public var cardholderName: String?
+    public var cvv: String?
+    public var expirationMonth: String?
+    public var expirationYear: String?
+    public var expirationDate: String?
+    public var number: String?
     
     public var customerId: String
-    public var billingAddress: CreditCardAddressRequest
-    public var billingAddressId: String
-    public var deviceData: String
-    public var deviceSessionId: String
-    public var fraudMerchantId: String
-    public var options: CreditCardOptionsRequest
-    public var paymentMethodToken: String
-    public var paymentMethodNonce: String
-    public var venmoSdkPaymentMethodCode: String
-    public var token: String
+    public var billingAddress: CreditCardAddressRequest?
+    public var billingAddressId: String?
+    public var deviceData: String?
+    public var deviceSessionId: String?
+    public var fraudMerchantId: String?
+    public var options: CreditCardOptionsRequest?
+    public var paymentMethodToken: String?
+    public var paymentMethodNonce: String?
+    public var venmoSdkPaymentMethodCode: String?
+    public var token: String?
     
     private enum CodingKeys : String, CodingKey {
         case cardholderName = "cardholder-name"
@@ -49,24 +49,24 @@ public final class CreditCardRequest: Content {
         case token
     }
     
-    public init (cardholderName: String,
-                    cvv: String,
-                    expirationMonth: String,
-                    expirationYear: String,
-                    expirationDate: String,
-                    number: String,
+    public init (cardholderName: String? = nil,
+                    cvv: String? = nil,
+                    expirationMonth: String? = nil,
+                    expirationYear: String? = nil,
+                    expirationDate: String? = nil,
+                    number: String? = nil,
                     
                     customerId: String,
-                    billingAddress: CreditCardAddressRequest,
-                    billingAddressId: String,
-                    deviceData: String,
-                    deviceSessionId: String,
-                    fraudMerchantId: String,
-                    options: CreditCardOptionsRequest,
-                    paymentMethodToken: String,
-                    paymentMethodNonce: String,
-                    venmoSdkPaymentMethodCode: String,
-                    token: String) {
+                    billingAddress: CreditCardAddressRequest? = nil,
+                    billingAddressId: String? = nil,
+                    deviceData: String? = nil,
+                    deviceSessionId: String? = nil,
+                    fraudMerchantId: String? = nil,
+                    options: CreditCardOptionsRequest? = nil,
+                    paymentMethodToken: String? = nil,
+                    paymentMethodNonce: String? = nil,
+                    venmoSdkPaymentMethodCode: String? = nil,
+                    token: String? = nil) {
         self.cardholderName = cardholderName
         self.cvv = cvv
         self.expirationMonth = expirationMonth

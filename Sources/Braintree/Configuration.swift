@@ -23,7 +23,7 @@ public class Configuration {
     
     public let logger: Logger
     
-    public static var version = ""//new ClientLibraryProperties().version() //TODO
+    public static var version = "1.0"
     public static var grapthQLApiVersion = "2018-05-21"
     public static var apiVersion = "4"
     

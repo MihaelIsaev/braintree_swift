@@ -8,7 +8,7 @@
 import Foundation
 
 class CredentialsParser {
-    public var environment: Environment
+    public var environment: BraintreeEnvironment
     public var merchantId: String?
     public var clientId: String?
     public var clientSecret: String?
@@ -41,9 +41,9 @@ class CredentialsParser {
         self.environment = try CredentialsParser.parseEnvironment(accessToken)
     }
     
-    private static func parseEnvironment(_ credential: String) throws -> Environment {
+    private static func parseEnvironment(_ credential: String) throws -> BraintreeEnvironment {
         let environment = credential.split(separator: "$").map { "\($0)" }[1]
-        return try Environment.parseEnvironment(environment: environment)
+        return try BraintreeEnvironment.parseEnvironment(environment: environment)
     }
     
     private static func parseMerchantId(_ accessToken: String) -> String {

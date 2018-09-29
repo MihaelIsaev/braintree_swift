@@ -1,5 +1,5 @@
 //
-//  Environment.swift
+//  BraintreeEnvironment.swift
 //  Braintree
 //
 //  Created by Mihael Isaev on 27/09/2018.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum Environment: String, Codable {
+public enum BraintreeEnvironment: String, Codable {
     /// For Braintree internal development.
     case development, qa
     
@@ -65,11 +65,11 @@ public enum Environment: String, Codable {
         return ProcessInfo.processInfo.environment["GRAPHQL_URL"] ?? "https://atmosphere.bt.local:8080/graphql"
     }
     
-    public static func parseEnvironment(environment: String) throws -> Environment {
+    public static func parseEnvironment(environment: String) throws -> BraintreeEnvironment {
         if environment == "integration" {
             return .development
         }
-        guard let env = Environment(rawValue: environment) else {
+        guard let env = BraintreeEnvironment(rawValue: environment) else {
             throw BraintreeError(.configuration, reason: "Unknown environment: \(environment)")
         }
         return env

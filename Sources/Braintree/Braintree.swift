@@ -11,7 +11,7 @@ import Vapor
 public class Braintree: Service {
     var configuration: Configuration
     
-    public init(environment: Environment, merchantId: String, publicKey: String, privateKey: String) throws {
+    public init(environment: BraintreeEnvironment, merchantId: String, publicKey: String, privateKey: String) throws {
         self.configuration = try Configuration(environment: environment,
                                                merchantId: merchantId,
                                                publicKey: publicKey,

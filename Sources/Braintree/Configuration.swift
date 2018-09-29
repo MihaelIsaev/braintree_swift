@@ -8,7 +8,7 @@
 import Foundation
 
 public class Configuration {
-    private let environment: Environment
+    private let environment: BraintreeEnvironment
     private let timeout: TimeInterval = 60
     private let connectTimeout: TimeInterval = 60
     //private let proxy: Proxy
@@ -27,7 +27,7 @@ public class Configuration {
     public static var grapthQLApiVersion = "2018-05-21"
     public static var apiVersion = "4"
     
-    public init(environment: Environment, merchantId: String, publicKey: String, privateKey: String) throws {
+    public init(environment: BraintreeEnvironment, merchantId: String, publicKey: String, privateKey: String) throws {
         self.environment = environment
     
         guard merchantId.count > 0 else { throw BraintreeError(.configuration, reason: "merchantId needs to be set") }

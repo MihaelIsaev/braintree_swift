@@ -10,4 +10,8 @@ import Foundation
 public class OAuthAccessRevocation: Codable {
     private var merchantId: String
     private var oauthApplicationClientId: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

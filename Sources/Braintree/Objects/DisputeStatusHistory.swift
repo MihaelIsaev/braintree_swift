@@ -12,4 +12,8 @@ public class DisputeStatusHistory: Codable {
     private var effectiveDate: Date
     private var timestamp: Date
     private var status: Dispute.Status
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

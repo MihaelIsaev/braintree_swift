@@ -16,4 +16,8 @@ public final class SubscriptionOptionsRequest: Content {
     private var revertSubscriptionOnProrationFailure: Bool
     private var startImmediately: Bool
     private var paypal: SubscriptionOptionsPayPalRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

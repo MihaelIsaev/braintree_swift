@@ -12,4 +12,8 @@ public final class TransactionCloneRequest: Content {
     private var amount: Double
     private var channel: String
     private var transactionOptionsCloneRequest: TransactionOptionsCloneRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

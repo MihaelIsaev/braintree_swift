@@ -13,4 +13,8 @@ public class CoinbaseDetails: Codable {
     private var userName: String
     private var token: String
     private var imageUrl: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

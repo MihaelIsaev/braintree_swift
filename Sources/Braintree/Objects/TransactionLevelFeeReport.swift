@@ -10,4 +10,8 @@ import Foundation
 public class TransactionLevelFeeReport: Codable {
     private var rows: [TransactionLevelFeeReportRow] = []
     private var valid: Bool
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

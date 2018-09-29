@@ -14,4 +14,8 @@ public class DisputeTransaction: Codable {
     private var orderId: String
     private var paymentInstrumentSubtype: String
     private var purchaseOrderNumber: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

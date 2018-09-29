@@ -8,6 +8,10 @@
 import Foundation
 import Vapor
 
-public final class PaymentMethodOptionsPayPalShippingRequest: Contenet {
+public final class PaymentMethodOptionsPayPalShippingRequest: Content {
     private var parent: PaymentMethodOptionsPayPalRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

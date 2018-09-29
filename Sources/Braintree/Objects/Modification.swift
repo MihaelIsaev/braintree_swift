@@ -9,7 +9,7 @@ import Foundation
 
 public class Modification: Codable {
     private var amount: Double
-    private var currentBillingCycle: Integer
+    private var currentBillingCycle: Int64
     private var description: String
     private var id: String
     private var kind: String
@@ -18,4 +18,8 @@ public class Modification: Codable {
     private var neverExpires: Bool
     private var numberOfBillingCycles: Int64
     private var planId: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

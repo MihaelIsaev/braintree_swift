@@ -8,12 +8,17 @@
 import Foundation
 
 public class SubscriptionPager: Pager {
-    private var gateway: SubscriptionGateway
-    private var search: SubscriptionSearchRequest
+    public var gateway: SubscriptionGateway
+    public var search: SubscriptionSearchRequest
+    
+    public init (gateway: SubscriptionGateway, search: SubscriptionSearchRequest) {
+        self.gateway = gateway
+        self.search = search
+    }
     
     public typealias T = SubscriptionPager
     
     public func getPage(ids: [String]) -> [SubscriptionPager] {
-        return gateway.fetchSubscriptions(search, ids)
+        return []//TODO//gateway.fetchSubscriptions(search, ids)
     }
 }

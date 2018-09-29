@@ -17,4 +17,8 @@ public class ApplePayDetails: Codable {
     private var last4: String
     private var token: String
     private var imageUrl: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

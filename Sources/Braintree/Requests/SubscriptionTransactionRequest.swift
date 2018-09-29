@@ -12,4 +12,8 @@ public final class SubscriptionTransactionRequest: Content {
     private var amount: Double
     private var subscriptionId: String
     private var subscriptionTransactionOptionsRequest: SubscriptionTransactionOptionsRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

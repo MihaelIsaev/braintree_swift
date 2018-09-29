@@ -12,4 +12,8 @@ public final class DescriptorRequest: Content {
     private var name: String
     private var phone: String
     private var url: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

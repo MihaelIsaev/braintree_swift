@@ -8,13 +8,13 @@
 import Foundation
 import Vapor
 
-class Http {
-    public enum RequestMethod {
+public class Http {
+    public enum RequestMethod: Int, Codable {
         case delete, get, post, put
     }
     
     private var container: Container
-    private var configuration: Configuration
+    public var configuration: Configuration
     
     public init (container: Container, configuration: Configuration) {
         self.container = container

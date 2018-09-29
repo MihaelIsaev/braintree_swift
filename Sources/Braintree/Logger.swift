@@ -7,14 +7,14 @@
 
 import Foundation
 
-class Logger {
-    public enum Level {
+public class Logger {
+    public enum Level: Int, Codable {
         case fine, info
     }
     
-    init() {}
+    public init() {}
     
-    func log(_ level: Level, message: String) {
+    public func log(_ level: Level, message: String) {
         
     }
 }

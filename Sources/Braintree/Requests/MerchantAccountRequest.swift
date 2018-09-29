@@ -16,4 +16,8 @@ public final class MerchantAccountRequest: Content {
     private var tosAccepted: Bool
     private var masterMerchantAccountId: String
     private var id: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

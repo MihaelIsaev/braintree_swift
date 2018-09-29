@@ -13,4 +13,8 @@ public final class OAuthCredentialsRequest: Content {
     public var scope: String
     public var grantType: String
     public var refreshToken: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

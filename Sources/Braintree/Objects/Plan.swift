@@ -8,7 +8,7 @@
 import Foundation
 
 public class Plan: Codable {
-    public enum DurationUnit {
+    public enum DurationUnit: Int, Codable {
         case day, month, unrecognized
     }
     
@@ -28,4 +28,8 @@ public class Plan: Codable {
     private var trialDurationUnit: DurationUnit
     private var createdAt: Date
     private var updatedAt: Date
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

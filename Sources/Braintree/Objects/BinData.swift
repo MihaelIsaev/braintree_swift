@@ -17,4 +17,8 @@ public class BinData: Codable {
     private var payroll: String
     private var prepaid: String
     private var productId: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

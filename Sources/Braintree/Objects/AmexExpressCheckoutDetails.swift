@@ -17,4 +17,8 @@ public class AmexExpressCheckoutDetails: Codable {
     private var cardMemberExpiryDate: String
     private var imageUrl: String
     private var sourceDescription: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

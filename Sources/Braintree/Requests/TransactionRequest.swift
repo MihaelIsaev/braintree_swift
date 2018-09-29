@@ -56,4 +56,8 @@ public final class TransactionRequest: Content {
     private var riskDataTransactionRequest: RiskDataTransactionRequest
     
     private var transactionLineItemRequests: [TransactionLineItemRequest]
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

@@ -18,4 +18,8 @@ public final class PaymentMethodOptionsRequest: Content {
     private var venmoSdkSession: String
     private var paymentMethodOptionsPayPalRequest: PaymentMethodOptionsPayPalRequest
     private var usBankAccountVerificationMethod: UsBankAccountVerification.VerificationMethod
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

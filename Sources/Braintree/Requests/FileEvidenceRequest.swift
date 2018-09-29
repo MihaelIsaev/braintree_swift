@@ -11,4 +11,8 @@ import Vapor
 public final class FileEvidenceRequest: Content {
     private var documentId: String
     private var category: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

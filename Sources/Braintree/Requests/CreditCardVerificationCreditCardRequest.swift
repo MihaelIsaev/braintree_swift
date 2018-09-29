@@ -17,4 +17,8 @@ public final class CreditCardVerificationCreditCardRequest: Content {
     private var expirationYear: String
     private var number: String
     private var billingAddress: CreditCardVerificationBillingAddressRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

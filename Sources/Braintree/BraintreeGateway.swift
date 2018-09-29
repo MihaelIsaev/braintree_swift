@@ -9,9 +9,9 @@ import Foundation
 import Vapor
 
 class BraintreeGateway {
-    private var configuration: Configuration
+    public var configuration: Configuration
     //private var graphQLClient: GraphQLClient
-    private var http: Http
+    public var http: Http
     
     /// Instantiates a BraintreeGateway. Use the values provided by Braintree
     init(container: Container, environment: Environment, merchantId: String, publicKey: String, privateKey: String) throws {

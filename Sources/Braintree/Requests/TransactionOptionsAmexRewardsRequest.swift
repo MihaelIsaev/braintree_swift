@@ -14,4 +14,8 @@ public final class TransactionOptionsAmexRewardsRequest: Content {
     private var currencyAmount: String
     private var currencyIsoCode: String
     private var requestId: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

@@ -11,4 +11,8 @@ import Vapor
 public final class PayPalAccountOptionsRequest: Content {
     private var makeDefault: Bool
     private var parent: PayPalAccountRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

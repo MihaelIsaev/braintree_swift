@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum PaymentInstrumentType: String {
+public enum PaymentInstrumentType: String, Codable {
     case paypalAccount = "paypal_account"
     @available(*, deprecated)
     case europeBankAccount = "europe_bank_account"

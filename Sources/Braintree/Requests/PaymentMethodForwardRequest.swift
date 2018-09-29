@@ -12,4 +12,8 @@ import Vapor
 public final class PaymentMethodForwardRequest: Content {
     private var token: String
     private var receivingMerchantId: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

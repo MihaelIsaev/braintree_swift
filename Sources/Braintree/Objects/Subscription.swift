@@ -8,11 +8,11 @@
 import Foundation
 
 public class Subscription: Codable {
-    public enum DurationUnit {
+    public enum DurationUnit: Int, Codable {
         case day, month, unrecognized
     }
     
-    public enum Status: String {
+    public enum Status: String, Codable {
         case active = "Active"
         case canceled = "Canceled"
         case expired = "Expired"
@@ -21,7 +21,7 @@ public class Subscription: Codable {
         case unrecognized = "Unrecognized"
     }
     
-    public enum Source: String {
+    public enum Source: String, Codable {
         case api, recurring, unrecognized
         case controlPanel = "control_panel"
     }
@@ -58,4 +58,8 @@ public class Subscription: Codable {
     private var transactions: [Transaction]
     private var trialDuration: Int64
     private var trialDurationUnit: DurationUnit
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

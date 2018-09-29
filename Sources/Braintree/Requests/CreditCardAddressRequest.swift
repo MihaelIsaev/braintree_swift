@@ -10,5 +10,9 @@ import Vapor
 
 public final class CreditCardAddressRequest: Content {
     private var parent: CreditCardRequest
-    private var optionsRequest: Request
+    private var optionsRequest: CreditCardAddressOptionsRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

@@ -10,4 +10,8 @@ import Vapor
 
 public final class OAuthRevokeAccessTokenRequest: Content {
     public var token: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

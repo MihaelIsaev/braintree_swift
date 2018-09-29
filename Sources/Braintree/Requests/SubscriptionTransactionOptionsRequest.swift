@@ -11,4 +11,8 @@ import Vapor
 public final class SubscriptionTransactionOptionsRequest: Content {
     private var submitForSettlement: Bool
     private var parent: SubscriptionTransactionRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

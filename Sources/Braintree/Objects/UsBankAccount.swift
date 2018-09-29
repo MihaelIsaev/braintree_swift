@@ -17,8 +17,12 @@ public class UsBankAccount: PaymentMethod {
     private var bankName: String
     public var subscriptions: [Subscription]
     public var customerId: String
-    public var isDefault: Bool
+    public var isDefault: Bool?
     private var achMandate: AchMandate
     private var verifications: [UsBankAccountVerification]
     private var isVerified: Bool
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

@@ -15,4 +15,8 @@ public class IndividualDetails: Codable {
     private var phone: String
     private var address: Address
     private var ssnLast4: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

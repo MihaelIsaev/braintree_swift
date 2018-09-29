@@ -8,7 +8,7 @@
 import Foundation
 
 public class WebhookNotification: Codable {
-    public enum Kind: String {
+    public enum Kind: String, Codable {
         case check
         case partnerMerchantDisconnected = "partner_merchant_disconnected"
         case partnerMerchantConnected = "partner_merchant_connected"
@@ -40,20 +40,26 @@ public class WebhookNotification: Codable {
         case unrecognized
     }
     
-    private var errors: ValidationErrors
-    private var merchantAccount: MerchantAccount
-    private var subscription: Subscription
-    private var transaction: Transaction
-    private var disbursement: Disbursement
-    private var dispute: Dispute
-    private var kind: Kind
-    private var timestamp: Date
-    private var partnerMerchant: PartnerMerchant
-    private var oauthAccessRevocation: OAuthAccessRevocation
-    private var accountUpdaterDailyReport: AccountUpdaterDailyReport
-    private var connectedMerchantStatusTransitioned: ConnectedMerchantStatusTransitioned
-    private var connectedMerchantPayPalStatusChanged: ConnectedMerchantPayPalStatusChanged
-    private var idealPayment: IdealPayment
-    private var grantedPaymentInstrumentUpdate: GrantedPaymentInstrumentUpdate
-    private var sourceMerchantId: String
+    public var errors: ValidationErrors
+    public var merchantAccount: MerchantAccount
+    public var subscription: Subscription
+    public var transaction: Transaction
+    public var disbursement: Disbursement
+    public var dispute: Dispute
+    public var kind: Kind
+    public var timestamp: Date?
+    public var partnerMerchant: PartnerMerchant
+    public var oauthAccessRevocation: OAuthAccessRevocation
+    public var accountUpdaterDailyReport: AccountUpdaterDailyReport
+    public var connectedMerchantStatusTransitioned: ConnectedMerchantStatusTransitioned
+    public var connectedMerchantPayPalStatusChanged: ConnectedMerchantPayPalStatusChanged
+    public var idealPayment: IdealPayment
+    public var grantedPaymentInstrumentUpdate: GrantedPaymentInstrumentUpdate
+    public var sourceMerchantId: String
+    public var message: String
+    
+    //TODO: rewrite with nested objects
+//    private enum CodingKeys : String, CodingKey {
+//        case errors, merchantAccount = "merchant-account", subscription, transaction, disbursement, dispute, kind, timestamp, partnerMerchant = "partner-merchant", oauthAccessRevocation = "", accountUpdaterDailyReport = "", connectedMerchantStatusTransitioned = "", connectedMerchantPayPalStatusChanged = "", idealPayment = "", grantedPaymentInstrumentUpdate = "", sourceMerchantId = "source-merchant-id", message
+//    }
 }

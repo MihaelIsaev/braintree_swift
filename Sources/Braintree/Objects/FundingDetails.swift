@@ -14,4 +14,8 @@ public class FundingDetails: Codable {
     private var routingNumber: String
     private var accountNumberLast4: String
     private var descriptor: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

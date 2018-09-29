@@ -8,14 +8,14 @@
 import Foundation
 
 public class UsBankAccountVerification: Codable {
-    public enum Status: String {
+    public enum Status: String, Codable {
         case failed
         case getewayRejected = "gateway_rejected"
         case processorDeclined = "processor_declined"
         case unrecognized, verified, pending
     }
     
-    public enum VerificationMethod: String {
+    public enum VerificationMethod: String, Codable {
         case tokenizedCheck = "tokenized_check"
         case networkCheck = "network_check"
         case independentCheck = "independent_check"
@@ -23,13 +23,18 @@ public class UsBankAccountVerification: Codable {
         case microTransfers = "micro_transfers"
     }
     
-    private var id: String
-    private var status: Status
-    private var verificationMethod: VerificationMethod
-    private var processorResponseCode: String
-    private var processorResponseText: String
-    private var verificationDeterminedAt: Date
-    private var createdAt: Date
-    private var gatewayRejectionReason: GatewayRejectionReason
-    private var usBankAccount: UsBankAccount
+    public var usBankAccountVerificationMethod: VerificationMethod
+    public var verificationDeterminedAt: Date?
+    public var transactionGatewayRejectionReason: Transaction.GatewayRejectionReason
+    public var processorResponseCode: String
+    public var processorResponseText: String
+    public var merchantAccountId: String
+    public var usBankAccountVerificationStatus: Status
+    public var id: String
+    public var usBankAccount: UsBankAccount
+    public var createdAt: Date?
+    
+    private enum CodingKeys : String, CodingKey {
+        case usBankAccountVerificationMethod = "verification-method", verificationDeterminedAt = "verification-determined-at", transactionGatewayRejectionReason = "transaction-gateway-rejection-reason", processorResponseCode = "processor-response-code", processorResponseText = "processor-response-text", merchantAccountId = "merchant-account-id", usBankAccountVerificationStatus = "status", id, usBankAccount = "us-bank-account", createdAt = "created-at"
+    }
 }

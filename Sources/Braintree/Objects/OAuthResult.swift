@@ -9,4 +9,8 @@ import Foundation
 
 public class OAuthResult: Codable {
     private var result: Bool
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

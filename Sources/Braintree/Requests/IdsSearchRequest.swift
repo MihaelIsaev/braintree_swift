@@ -10,4 +10,8 @@ import Vapor
 
 public final class IdsSearchRequest: Content {
     
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

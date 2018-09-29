@@ -10,4 +10,8 @@ import Foundation
 public class TransactionDetails: Codable {
     private var id: String
     private var amount: Double
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

@@ -16,7 +16,7 @@ public class SamsungPayCard: PaymentMethod {
     private var customerLocation: String
     private var expirationMonth: String
     private var expirationYear: String
-    public var isDefault: Bool
+    public var isDefault: Bool?
     private var isVenmoSdk: Bool
     private var isExpired: Bool
     public var imageUrl: String
@@ -33,6 +33,10 @@ public class SamsungPayCard: PaymentMethod {
     private var uniqueNumberIdentifier: String
     public var subscriptions: [Subscription]
     public var token: String
-    private var createdAt: Date
-    private var updatedAt: Date
+    private var createdAt: Date?
+    private var updatedAt: Date?
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

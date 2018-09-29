@@ -16,4 +16,8 @@ public class PaymentMethodNonce: Codable {
     private var threeDSecureInfo: ThreeDSecureInfo
     private var type: String
     private var binData: BinData
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

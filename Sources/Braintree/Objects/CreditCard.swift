@@ -7,8 +7,8 @@
 
 import Foundation
 
-public class CreditCard {
-    public enum CardType: String {
+public class CreditCard: Codable {
+    public enum CardType: String, Codable {
         case amex = "American Express"
         case carteBlanche = "Carte Blanche"
         case chinaUnionPay = "China UnionPay"
@@ -24,74 +24,78 @@ public class CreditCard {
         case visa = "Visa"
     }
     
-    public enum CustomerLocation: String {
+    public enum CustomerLocation: String, Codable {
         case international, us, unrecognized
     }
     
-    public enum Commercial: String {
+    public enum Commercial: String, Codable {
         case yes = "Yes"
         case no = "No"
         case unknown = "Unknown"
     }
     
-    public enum Debit: String {
+    public enum Debit: String, Codable {
         case yes = "Yes"
         case no = "No"
         case unknown = "Unknown"
     }
     
-    public enum DurbinRegulated: String {
+    public enum DurbinRegulated: String, Codable {
         case yes = "Yes"
         case no = "No"
         case unknown = "Unknown"
     }
     
-    public enum Healthcare: String {
+    public enum Healthcare: String, Codable {
         case yes = "Yes"
         case no = "No"
         case unknown = "Unknown"
     }
     
-    public enum Payroll: String {
+    public enum Payroll: String, Codable {
         case yes = "Yes"
         case no = "No"
         case unknown = "Unknown"
     }
     
-    public enum Prepaid: String {
+    public enum Prepaid: String, Codable {
         case yes = "Yes"
         case no = "No"
         case unknown = "Unknown"
     }
     
-    private var billingAddress: Address
-    private var bin: String
-    private var cardholderName: String
-    private var cardType: String
-    private var customerId: String
-    private var customerLocation: String
-    private var expirationMonth: String
-    private var expirationYear: String
-    private var isDefault: Bool
-    private var isVenmoSdk: Bool
-    private var isExpired: Bool
-    private var imageUrl: String
-    private var last4: String
-    private var commercial: String
-    private var debit: String
-    private var durbinRegulated: String
-    private var healthcare: String
-    private var payroll: String
-    private var prepaid: String
-    private var productId: String
-    private var countryOfIssuance: String
-    private var issuingBank: String
-    private var uniqueNumberIdentifier: String
-    private var subscriptions: [Subscription]
-    private var token: String
-    private var createdAt: Date
-    private var updatedAt: Date
-    private var verification: CreditCardVerification
+    public var billingAddress: Address
+    public var bin: String
+    public var cardholderName: String
+    public var cardType: String
+    public var customerId: String
+    public var customerLocation: String
+    public var expirationMonth: String
+    public var expirationYear: String
+    public var isDefault: Bool
+    public var isVenmoSdk: Bool
+    public var isExpired: Bool
+    public var imageUrl: String
+    public var last4: String
+    public var commercial: String
+    public var debit: String
+    public var durbinRegulated: String
+    public var healthcare: String
+    public var payroll: String
+    public var prepaid: String
+    public var productId: String
+    public var countryOfIssuance: String
+    public var issuingBank: String
+    public var uniqueNumberIdentifier: String
+    public var subscriptions: [Subscription]
+    public var token: String
+    public var createdAt: Date
+    public var updatedAt: Date
+    public var verification: CreditCardVerification
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
     
     public var xpirationDate: String {
         return expirationMonth + "/" + expirationYear

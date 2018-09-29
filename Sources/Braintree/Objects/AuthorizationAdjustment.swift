@@ -13,4 +13,8 @@ public class AuthorizationAdjustment: Codable {
     private var timestamp: Date
     private var processorResponseCode: String
     private var processorResponseText: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

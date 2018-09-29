@@ -11,4 +11,8 @@ import Vapor
 public final class CreditCardVerificationRequest: Content {
     private var creditCardRequest: CreditCardVerificationCreditCardRequest
     private var optionsRequest: CreditCardVerificationOptionsRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

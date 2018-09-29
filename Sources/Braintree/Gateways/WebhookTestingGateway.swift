@@ -7,9 +7,9 @@
 
 import Foundation
 
-class WebhookTestingGateway {
-    private var http: Http
-    private var configuration: Configuration
+public class WebhookTestingGateway {
+    public var http: Http
+    public var configuration: Configuration
     
     public init(http: Http, configuration: Configuration) {
         self.http = http

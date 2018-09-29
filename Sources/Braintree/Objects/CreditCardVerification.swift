@@ -8,7 +8,7 @@
 import Foundation
 
 public class CreditCardVerification: Codable {
-    public enum Status {
+    public enum Status: Int, Codable {
         case failed, gatewayRejected, processorDeclined, unrecognized, verified
     }
     
@@ -18,7 +18,7 @@ public class CreditCardVerification: Codable {
     private var avsStreetAddressResponseCode: String
     private var currencyIsoCode: String
     private var cvvResponseCode: String
-    private var gatewayRejectionReason: GatewayRejectionReason
+    private var gatewayRejectionReason: Transaction.GatewayRejectionReason
     private var processorResponseCode: String
     private var processorResponseText: String
     private var merchantAccountId: String
@@ -28,4 +28,8 @@ public class CreditCardVerification: Codable {
     private var billingAddress: Address
     private var createdAt: Date
     private var riskData: RiskData
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

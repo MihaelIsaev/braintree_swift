@@ -11,4 +11,8 @@ import Vapor
 public final class SubscriptionOptionsPayPalRequest: Content {
     private var parent: SubscriptionOptionsRequest
     private var description: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

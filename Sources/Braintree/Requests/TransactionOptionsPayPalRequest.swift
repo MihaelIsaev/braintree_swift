@@ -15,4 +15,8 @@ public final class TransactionOptionsPayPalRequest: Content {
     private var payeeEmail: String
     private var description: String
     private var supplementaryData: [String: String]
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

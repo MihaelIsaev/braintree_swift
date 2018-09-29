@@ -50,4 +50,8 @@ public class TransactionLevelFeeReportRow: Codable {
     private var multicurrencyFeeAmount: Double
     private var multicurrencyFeeCredit: Double
     private var totalFeeAmount: Double
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

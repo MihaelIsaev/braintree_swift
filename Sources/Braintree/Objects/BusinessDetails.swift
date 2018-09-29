@@ -12,4 +12,8 @@ public class BusinessDetails: Codable {
     private var legalName: String
     private var taxId: String
     private var address: Address
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

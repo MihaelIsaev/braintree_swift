@@ -11,4 +11,8 @@ import Vapor
 public final class PaymentMethodAddressOptionsRequest: Content {
     private var parent: PaymentMethodAddressRequest
     private var updateExisting: Bool
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

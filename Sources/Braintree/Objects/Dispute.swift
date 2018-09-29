@@ -8,11 +8,11 @@
 import Foundation
 
 public class Dispute: Codable {
-    public enum Status {
+    public enum Status: Int, Codable {
         case open, lost, won, unrecognized, accepted, disputed, expired
     }
     
-    public enum Reason {
+    public enum Reason: Int, Codable {
         case cancelledRecurringTransaction
         case creditNotProcessed
         case duplicate
@@ -26,7 +26,7 @@ public class Dispute: Codable {
         case retrieval
     }
     
-    public enum Kind {
+    public enum Kind: Int, Codable {
         case chargeback, preArbitration, retrieval, unrecognized
     }
     
@@ -55,4 +55,8 @@ public class Dispute: Codable {
     private var wonAmount: Double
     private var transactionDetails: TransactionDetails
     private var transaction: DisputeTransaction
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

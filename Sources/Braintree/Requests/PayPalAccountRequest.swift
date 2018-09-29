@@ -11,4 +11,8 @@ import Vapor
 public final class PayPalAccountRequest: Content {
     private var token: String
     private var optionsRequest: PayPalAccountOptionsRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

@@ -10,4 +10,8 @@ import Vapor
 
 public final class UsBankAccountVerificationSearchRequest: Content {
     
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

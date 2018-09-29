@@ -10,4 +10,8 @@ import Foundation
 public class PaymentMethodNonceDetails: Codable {
     private var cardType: String
     private var lastTwo: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

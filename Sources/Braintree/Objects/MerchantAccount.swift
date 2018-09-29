@@ -8,11 +8,11 @@
 import Foundation
 
 public class MerchantAccount: Codable {
-    public enum Status {
+    public enum Status: Int, Codable {
         case pending, active, suspended, unrecognized
     }
     
-    public enum FundingDestination: String {
+    public enum FundingDestination: String, Codable {
         case bank
         case mobilePhone = "mobile_phone"
         case email, unrecognized
@@ -26,4 +26,8 @@ public class MerchantAccount: Codable {
     private var fundingDetails: FundingDetails
     private var currencyIsoCode: String
     private var isDefault: Bool
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

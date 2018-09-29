@@ -8,7 +8,7 @@
 import Foundation
 
 public class MerchantAccountPager: Pager {
-    private var gateway: MerchantAccountGateway
+    public var gateway: MerchantAccountGateway
     
     public init (gateway: MerchantAccountGateway) {
         self.gateway = gateway
@@ -17,6 +17,6 @@ public class MerchantAccountPager: Pager {
     public typealias T = MerchantAccountPager
     
     public func getPage(ids: [String]) -> [MerchantAccountPager] {
-        return gateway.fetchMerchantAccounts(page)
+        return []//TODO//gateway.fetchMerchantAccounts(page)
     }
 }

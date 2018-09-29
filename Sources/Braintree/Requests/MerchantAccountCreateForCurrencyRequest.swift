@@ -11,4 +11,8 @@ import Vapor
 public final class MerchantAccountCreateForCurrencyRequest: Content {
     private var currency: String
     private var id: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

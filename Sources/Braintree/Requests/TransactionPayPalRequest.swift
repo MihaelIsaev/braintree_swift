@@ -12,4 +12,8 @@ public final class TransactionPayPalRequest: Content {
     private var parent: TransactionRequest
     private var payeeId: String
     private var payeeEmail: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

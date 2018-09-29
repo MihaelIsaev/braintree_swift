@@ -17,4 +17,8 @@ public final class TransactionCreditCardRequest: Content {
     private var number: String
     private var parent: TransactionRequest
     private var token: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

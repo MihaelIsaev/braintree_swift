@@ -26,4 +26,8 @@ public final class SubscriptionRequest: Content {
     private var price: Double
     private var trialDuration: Int64
     private var trialDurationUnit: Subscription.DurationUnit
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

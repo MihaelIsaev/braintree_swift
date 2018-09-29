@@ -15,5 +15,9 @@ public final class PaymentMethodOptionsPayPalRequest: Content {
     private var customField: String
     private var description: String
     private var orderId: String
-    private var amount: Doublie
+    private var amount: Double
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

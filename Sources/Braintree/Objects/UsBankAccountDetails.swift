@@ -16,4 +16,8 @@ public class UsBankAccountDetails: Codable {
     private var imageUrl: String
     private var bankName: String
     private var achMandate: AchMandate
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

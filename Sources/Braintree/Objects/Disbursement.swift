@@ -8,7 +8,7 @@
 import Foundation
 
 public class Disbursement: Codable {
-    public enum DisbursementType {
+    public enum DisbursementType: Int, Codable {
         case unknown, credit, debit
     }
     
@@ -22,4 +22,8 @@ public class Disbursement: Codable {
     private var retry: Bool
     private var amount: Double
     private var merchantAccount: MerchantAccount
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

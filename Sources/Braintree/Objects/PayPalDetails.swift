@@ -27,4 +27,8 @@ public class PayPalDetails: Codable {
     private var transactionFeeAmount: String
     private var transactionFeeCurrencyIsoCode: String
     private var description: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

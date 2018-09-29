@@ -17,4 +17,8 @@ public final class IndividualRequest: Content {
     private var dateOfBirth: String
     private var ssn: String
     private var parent: MerchantAccountRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

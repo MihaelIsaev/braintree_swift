@@ -10,4 +10,8 @@ import Vapor
 
 public final class UpdateModificationRequest: Content {
     private var existingId: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

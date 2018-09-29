@@ -10,8 +10,12 @@ import Vapor
 
 public final class ModificationRequest: Content {
     private var amount: Double
-    private varnumberOfBillingCycles: Int64
+    private var numberOfBillingCycles: Int64
     private var parent: ModificationsRequest
     private var quantity: Int64
     private var neverExpires: Bool
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

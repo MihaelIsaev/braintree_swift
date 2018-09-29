@@ -9,8 +9,12 @@ import Foundation
 
 public class StatusEvent: Codable {
     private var amount: Double
-    private var status: Status
+    private var status: Transaction.Status
     private var timestamp: Date
-    private var source: Source
+    private var source: Transaction.Source
     private var user: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

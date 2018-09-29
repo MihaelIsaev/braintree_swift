@@ -19,6 +19,6 @@ public class DisputePager: Pager {
     public typealias T = DisputePager
     
     public func getPage(ids: [String]) -> [DisputePager] {
-        return gateway.fetchDisputes(query, page)
+        return []//TODO//gateway.fetchDisputes(query, page)
     }
 }

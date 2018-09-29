@@ -28,4 +28,8 @@ public final class PaymentMethodRequest: Content {
     private var paypalRefreshToken: String
     private var paypalVaultWithoutUpgrade: Bool
     private var venmoSdkPaymentMethodCode: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

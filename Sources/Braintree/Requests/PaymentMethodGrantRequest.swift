@@ -13,4 +13,8 @@ public final class PaymentMethodGrantRequest: Content {
     private var allowVaulting: Bool
     private var includeBillingPostalCode: Bool
     private var revokeAfter: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

@@ -8,12 +8,17 @@
 import Foundation
 
 public class TransactionPager: Pager {
-    private var gateway: TransactionGateway
-    private var query: TransactionSearchRequest
+    public var gateway: TransactionGateway
+    public var query: TransactionSearchRequest
+    
+    public init (gateway: TransactionGateway, query: TransactionSearchRequest) {
+        self.gateway = gateway
+        self.query = query
+    }
     
     public typealias T = TransactionPager
     
     public func getPage(ids: [String]) -> [TransactionPager] {
-        return gateway.fetchTransactions(query, ids)
+        return []//TODO//gateway.fetchTransactions(query, ids)
     }
 }

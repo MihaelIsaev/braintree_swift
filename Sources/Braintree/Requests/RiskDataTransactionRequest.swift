@@ -12,4 +12,8 @@ public final class RiskDataTransactionRequest: Content {
     private var customerBrowser: String
     private var customerIP: String
     private var parent: TransactionRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

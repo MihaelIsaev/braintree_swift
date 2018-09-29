@@ -11,4 +11,8 @@ import Vapor
 public final class CustomerOptionsRequest: Content {
     private var parent: CustomerRequest
     private var customerOptionsPayPalRequest: CustomerOptionsPayPalRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

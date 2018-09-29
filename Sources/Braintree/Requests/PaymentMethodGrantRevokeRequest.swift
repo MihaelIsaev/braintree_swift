@@ -10,4 +10,8 @@ import Vapor
 
 public final class PaymentMethodGrantRevokeRequest: Content {
     private var sharedPaymentMethodToken: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

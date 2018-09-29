@@ -23,4 +23,8 @@ public final class TransactionLineItemRequest: Content {
     private var commodityCode: String
     private var url: String
     private var taxAmount: Double
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

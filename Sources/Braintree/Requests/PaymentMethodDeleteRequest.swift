@@ -10,4 +10,8 @@ import Vapor
 
 public final class PaymentMethodDeleteRequest: Content {
     private var revokeAllGrants: Bool
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

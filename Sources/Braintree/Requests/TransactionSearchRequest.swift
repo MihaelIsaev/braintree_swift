@@ -10,4 +10,8 @@ import Vapor
 
 public final class TransactionSearchRequest: Content {
     
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

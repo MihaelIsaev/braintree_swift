@@ -15,4 +15,8 @@ public class DisputeEvidence: Codable {
     private var url: String
     private var category: String
     private var sequenceNumber: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

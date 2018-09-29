@@ -13,4 +13,8 @@ public class OAuthCredentials: Codable {
     private var tokenType: String
     private var scope: String
     private var expiresAt: Date
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

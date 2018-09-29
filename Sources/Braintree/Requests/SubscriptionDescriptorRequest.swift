@@ -10,4 +10,8 @@ import Vapor
 
 public final class SubscriptionDescriptorRequest: Content {
     private var parent: SubscriptionRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

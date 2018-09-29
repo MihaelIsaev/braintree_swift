@@ -27,4 +27,8 @@ public final class OAuthConnectUrlBusinessRequest: Content {
     private var currency: String
     private var website: String
     private var establishedOn: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

@@ -11,4 +11,8 @@ import Vapor
 public final class SEPAClientTokenRequest: Content {
     private var mandateType: String
     private var mandateAcceptanceLocation: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

@@ -15,4 +15,8 @@ public class ThreeDSecureInfo: Codable {
     private var cavv: String
     private var eciFlag: String
     private var xid: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

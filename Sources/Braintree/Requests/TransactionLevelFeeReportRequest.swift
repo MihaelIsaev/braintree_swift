@@ -11,4 +11,8 @@ import Vapor
 public final class TransactionLevelFeeReportRequest: Content {
     private var date: String
     private var merchantAccountId: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

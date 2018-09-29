@@ -12,4 +12,8 @@ public final class TextEvidenceRequest: Content {
     private var content: String
     private var category: String
     private var sequenceNumber: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

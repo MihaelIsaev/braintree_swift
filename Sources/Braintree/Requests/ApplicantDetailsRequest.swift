@@ -20,5 +20,9 @@ public final class ApplicantDetailsRequest: Content {
     private var taxId: String
     private var routingNumber: String
     private var accountNumber: String
-    //private var parent: MerchantAccountRequest
+    private var parent: MerchantAccountRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

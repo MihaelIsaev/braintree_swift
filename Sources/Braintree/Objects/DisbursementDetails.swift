@@ -14,4 +14,8 @@ public class DisbursementDetails: Codable {
     private var success: Bool
     private var settlementCurrencyExchangeRate: Double
     private var settlementAmount: Double
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

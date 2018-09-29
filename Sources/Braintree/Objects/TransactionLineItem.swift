@@ -8,7 +8,7 @@
 import Foundation
 
 public class TransactionLineItem: Codable {
-    public enum Kind: String {
+    public enum Kind: String, Codable {
         case debit, credit, unrecognized
     }
     
@@ -25,4 +25,8 @@ public class TransactionLineItem: Codable {
     private var commodityCode: String
     private var url: String
     private var taxAmount: Double
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

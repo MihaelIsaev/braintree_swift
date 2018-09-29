@@ -12,13 +12,13 @@ public class CustomerPager: Pager {
     private var query: CustomerSearchRequest
     
     public init (gateway: CustomerGateway, query: CustomerSearchRequest) {
-        self.gateway = CustomerGateway
-        self.query = CustomerSearchRequest
+        self.gateway = gateway
+        self.query = query
     }
     
     public typealias T = CustomerPager
     
     public func getPage(ids: [String]) -> [CustomerPager] {
-        return gateway.fetchCustomers(query, ids)
+        return []//TODO//gateway.fetchCustomers(query, ids)
     }
 }

@@ -7,9 +7,9 @@
 
 import Foundation
 
-class CreditCardGateway {
-    private var http: Http
-    private var configuration: Configuration
+public class CreditCardGateway {
+    public var http: Http
+    public var configuration: Configuration
     
     public init(http: Http, configuration: Configuration) {
         self.http = http

@@ -19,6 +19,6 @@ public class CreditCardVerificationPager: Pager {
     public typealias T = CreditCardVerificationPager
     
     public func getPage(ids: [String]) -> [T] {
-        return gateway.fetchCreditCardVerifications(query, ids)
+        return []//TODO//gateway.fetchCreditCardVerifications(query, ids)
     }
 }

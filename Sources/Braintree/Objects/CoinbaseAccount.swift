@@ -18,4 +18,8 @@ public class CoinbaseAccount: Codable {
     private var createdAt: Date
     private var updatedAt: Date
     private var subscriptions: [Subscription]
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

@@ -16,4 +16,8 @@ public final class TransactionApplePayCardRequest: Content {
     private var expirationYear: String
     private var eciIndicator: String
     private var parent: TransactionRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

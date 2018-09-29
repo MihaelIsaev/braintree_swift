@@ -13,4 +13,8 @@ public final class ClientTokenOptionsRequest: Content {
     private var verifyCard: Bool
     private var failOnDuplicatePaymentMethod: Bool
     private var parent: ClientTokenRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

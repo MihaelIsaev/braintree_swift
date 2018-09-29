@@ -9,7 +9,10 @@ import Foundation
 import Vapor
 
 public final class PayPalOnlyAccountRequest: Content {
-    private var clientId: String
-    private var clientSecret: String
-    private var parent: MerchantRequest
+    public var clientId: String
+    public var clientSecret: String
+    
+    private enum CodingKeys : String, CodingKey {
+        case clientId = "client_id", clientSecret = "client_secret"
+    }
 }

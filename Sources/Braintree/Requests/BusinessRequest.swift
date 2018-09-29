@@ -14,4 +14,8 @@ public final class BusinessRequest: Content {
     private var address: BusinessAddressRequest
     private var taxId: String
     private var parent: MerchantAccountRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

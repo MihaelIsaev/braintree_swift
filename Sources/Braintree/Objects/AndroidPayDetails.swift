@@ -21,4 +21,8 @@ public class AndroidPayDetails: Codable {
     private var googleTransactionId: String
     private var bin: String
     private var imageUrl: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

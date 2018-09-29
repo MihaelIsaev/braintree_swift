@@ -8,20 +8,20 @@
 import Foundation
 
 public class Transaction: Codable {
-    public enum CreatedUsing: String {
+    public enum CreatedUsing: String, Codable {
         case fullInformation = "full_information"
         case token, unrecognized
     }
     
     public var isDisbursed: Bool {
-        return getDisbursementDetails().isValid()
+        return false//TODO//getDisbursementDetails().isValid()
     }
     
-    public enum EscrowStatus {
+    public enum EscrowStatus: Int, Codable {
         case held, holdPending, releasePending, released, refunded, unrecognized
     }
     
-    public enum GatewayRejectionReason: String {
+    public enum GatewayRejectionReason: String, Codable {
         case applicationIncomplete = "application_incomplete"
         case avs
         case avsAndCvv = "avs_and_cvv"
@@ -32,13 +32,13 @@ public class Transaction: Codable {
         case unrecognized
     }
     
-    public enum Source: String {
+    public enum Source: String, Codable {
         case api
         case controlPanel = "control_panel"
         case recurring, unrecognized
     }
     
-    public enum Status {
+    public enum Status: Int, Codable {
         case authorizationExpired
         case authorized
         case authorizind
@@ -55,12 +55,12 @@ public class Transaction: Codable {
         case voided
     }
     
-    public enum IndustryType: String {
+    public enum IndustryType: String, Codable {
         case lodging
         case travelCruise = "travel_cruise"
     }
     
-    public enum TransactionType: String {
+    public enum TransactionType: String, Codable {
         case credit, sale, unrecognized
     }
     
@@ -133,4 +133,8 @@ public class Transaction: Codable {
     private var authorizationAdjustments: [AuthorizationAdjustment]
     private var facilitatedDetails: FacilitatedDetails
     private var facilitatorDetails: FacilitatorDetails
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

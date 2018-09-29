@@ -28,4 +28,8 @@ public final class CustomerRequest: Content {
     private var riskDataCustomerRequest: RiskDataCustomerRequest
     private var optionsRequest: CustomerOptionsRequest
     private var parent: TransactionRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

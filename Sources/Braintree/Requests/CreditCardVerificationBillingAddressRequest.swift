@@ -22,4 +22,8 @@ public final class CreditCardVerificationBillingAddressRequest: Content {
     private var postalCode: String
     private var region: String
     private var streetAddress: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

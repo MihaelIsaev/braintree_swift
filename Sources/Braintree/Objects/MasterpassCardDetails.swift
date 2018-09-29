@@ -27,4 +27,8 @@ public class MasterpassCardDetails: Codable {
     private var productId: String
     private var countryOfIssuance: String
     private var issuingBank: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

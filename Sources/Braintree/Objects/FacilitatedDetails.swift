@@ -11,4 +11,8 @@ public class FacilitatedDetails: Codable {
     private var merchantId: String
     private var merchantName: String
     private var paymentMethodNonce: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

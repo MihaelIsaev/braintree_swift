@@ -31,4 +31,8 @@ public class Customer: Codable {
     private var usBankAccounts: [UsBankAccount]
     private var samsungPayCards: [SamsungPayCard]
     private var addresses: [Address]
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

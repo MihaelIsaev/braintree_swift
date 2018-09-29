@@ -8,9 +8,9 @@
 import Foundation
 import Vapor
 
-class AddressGateway {
-    private var http: Http
-    private var configuration: Configuration
+public class AddressGateway {
+    public var http: Http
+    public var configuration: Configuration
     
     public init(http: Http, configuration: Configuration) {
         self.http = http

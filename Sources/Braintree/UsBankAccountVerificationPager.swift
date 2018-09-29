@@ -8,8 +8,8 @@
 import Foundation
 
 public class UsBankAccountVerificationPager: Pager {
-    private var gateway: UsBankAccountVerificationGateway
-    private var query: UsBankAccountVerificationSearchRequest
+    public var gateway: UsBankAccountVerificationGateway
+    public var query: UsBankAccountVerificationSearchRequest
     
     public init (gateway: UsBankAccountVerificationGateway, query: UsBankAccountVerificationSearchRequest) {
         self.gateway = gateway
@@ -19,6 +19,6 @@ public class UsBankAccountVerificationPager: Pager {
     public typealias T = UsBankAccountVerificationPager
     
     public func getPage(ids: [String]) -> [UsBankAccountVerificationPager] {
-        return gateway.fetchUsBankAccountVerifications(query, ids);
+        return []//TODO//gateway.fetchUsBankAccountVerifications(query, ids);
     }
 }

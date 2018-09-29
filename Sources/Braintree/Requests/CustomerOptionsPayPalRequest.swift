@@ -16,4 +16,8 @@ public final class CustomerOptionsPayPalRequest: Content {
     private var description: String
     private var orderId: String
     private var amount: Double
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

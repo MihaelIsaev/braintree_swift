@@ -56,6 +56,10 @@ public class AndroidPayCard: PaymentMethod {
     /// Subscriptions associated with the payment method.
     public var subscriptions: [Subscription] = []
     
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
+    
     init (sourceCardType: String,
           sourceCardLast4: String,
           sourceDescription: String,
@@ -69,8 +73,8 @@ public class AndroidPayCard: PaymentMethod {
           isDefault: Bool? = nil,
           imageUrl: String,
           customerId: String,
-          createdAt: Date?,
-          updatedAt: Date?) {
+          createdAt: Date? = nil,
+          updatedAt: Date? = nil) {
         //self.cardType = cardType
         //self.last4 = last4
         self.sourceCardType = sourceCardType

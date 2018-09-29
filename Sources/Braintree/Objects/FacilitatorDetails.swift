@@ -11,4 +11,8 @@ public class FacilitatorDetails: Codable {
     private var oauthApplicationClientId: String
     private var oauthApplicationName: String
     private var sourcePaymentMethodToken: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

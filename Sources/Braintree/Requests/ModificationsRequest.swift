@@ -14,4 +14,8 @@ public final class ModificationsRequest: Content {
     private var adds: [AddModificationRequest]
     private var updates: UpdateModificationRequest
     private var removeModificationIds: [String]
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

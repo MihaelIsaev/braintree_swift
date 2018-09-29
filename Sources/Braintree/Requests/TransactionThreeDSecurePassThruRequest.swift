@@ -13,4 +13,8 @@ public final class TransactionThreeDSecurePassThruRequest: Content {
     private var eciFlag: String
     private var cavv: String
     private var xid: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

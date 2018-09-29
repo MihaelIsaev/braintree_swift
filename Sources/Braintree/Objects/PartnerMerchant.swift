@@ -13,4 +13,8 @@ public class PartnerMerchant: Codable {
     private var privateKey: String
     private var partnerMerchantId: String
     private var clientSideEncryptionKey: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

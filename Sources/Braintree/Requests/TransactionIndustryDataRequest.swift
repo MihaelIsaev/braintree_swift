@@ -19,4 +19,8 @@ public final class TransactionIndustryDataRequest: Content {
     private var lodgingCheckOutDate: String
     private var lodgingName: String
     private var roomRate: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

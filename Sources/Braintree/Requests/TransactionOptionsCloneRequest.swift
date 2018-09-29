@@ -11,4 +11,8 @@ import Vapor
 public final class TransactionOptionsCloneRequest: Content {
     private var parent: TransactionCloneRequest
     private var submitForSettlement: Bool
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

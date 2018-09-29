@@ -11,4 +11,8 @@ public class ConnectedMerchantStatusTransitioned: Codable {
     private var merchantPublicId: String
     private var oauthApplicationClientId: String
     private var status: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

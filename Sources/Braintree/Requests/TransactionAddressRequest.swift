@@ -10,4 +10,8 @@ import Vapor
 
 public final class TransactionAddressRequest: Content {
     private var parent: TransactionRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

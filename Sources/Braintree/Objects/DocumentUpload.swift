@@ -8,7 +8,7 @@
 import Foundation
 
 public class DocumentUpload: Codable {
-    public enum Kind: String {
+    public enum Kind: String, Codable {
         case evidenceDocument = "evidence_document"
     }
     
@@ -17,4 +17,8 @@ public class DocumentUpload: Codable {
     private var contentType: String
     private var name: String
     private var size: Int64
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

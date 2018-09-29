@@ -19,7 +19,11 @@ public class EuropeBankAccount: Codable {
     
     public var subscriptions: [Subscription] = []
     
-    public enum MandateType: String {
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
+    
+    public enum MandateType: String, Codable {
         case business, consumer
     }
 }

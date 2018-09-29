@@ -13,4 +13,8 @@ public class IdealPaymentDetails: Codable {
     private var imageUrl: String
     private var maskedIban: String
     private var bic: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

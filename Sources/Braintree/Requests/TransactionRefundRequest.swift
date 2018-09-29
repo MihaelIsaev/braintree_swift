@@ -11,4 +11,8 @@ import Vapor
 public final class TransactionRefundRequest: Content {
     private var amount: Double
     private var orderId: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

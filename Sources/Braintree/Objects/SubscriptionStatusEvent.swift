@@ -13,7 +13,11 @@ public class SubscriptionStatusEvent: Codable {
     private var planId: String
     private var price: Double
     private var timestamp: Date
-    private var source: Source
-    private var status: Status
+    private var source: Subscription.Source
+    private var status: Subscription.Status
     private var user: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

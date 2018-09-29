@@ -7,9 +7,9 @@
 
 import Foundation
 
-class WebhookNotificationGateway {
-    private var http: Http
-    private var configuration: Configuration
+public class WebhookNotificationGateway {
+    public var http: Http
+    public var configuration: Configuration
     
     public init(http: Http, configuration: Configuration) {
         self.http = http

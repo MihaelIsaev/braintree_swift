@@ -11,4 +11,8 @@ import Vapor
 //TODO
 public final class BusinessAddressRequest: Content {
     
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

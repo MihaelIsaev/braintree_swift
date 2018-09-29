@@ -18,4 +18,8 @@ public class IdealPayment: Codable {
     private var issuer: String
     private var approvalUrl: String
     private var ibanBankAccount: IbanBankAccount
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

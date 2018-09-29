@@ -10,4 +10,8 @@ import Vapor
 
 public final class UsBankAccountVerificationConfirmRequest: Content {
     private var depositAmounts: [Int64]
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

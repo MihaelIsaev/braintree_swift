@@ -14,4 +14,8 @@ public class IbanBankAccount: Codable {
     private var description: String
     private var maskedIban: String
     private var bic: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

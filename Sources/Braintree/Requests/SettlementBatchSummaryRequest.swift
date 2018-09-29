@@ -11,4 +11,8 @@ import Vapor
 public final class SettlementBatchSummaryRequest: Content {
     private var settlementDate: Date
     private var groupByCustomField: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

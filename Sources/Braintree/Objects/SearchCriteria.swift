@@ -9,4 +9,8 @@ import Foundation
 
 public class SearchCriteria: Codable {
     
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

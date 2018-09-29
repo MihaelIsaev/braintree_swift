@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum Environment: String {
+public enum Environment: String, Codable {
     /// For Braintree internal development.
     case development, qa
     

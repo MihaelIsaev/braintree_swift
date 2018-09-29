@@ -11,4 +11,8 @@ import Vapor
 public final class IndustryRequest: Content {
     private var industryType: Transaction.IndustryType
     private var data: TransactionIndustryDataRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

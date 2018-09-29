@@ -11,4 +11,8 @@ import Vapor
 public final class TransactionOptionsThreeDSecureRequest: Content {
     private var parent: TransactionOptionsRequest
     private var required: Bool
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

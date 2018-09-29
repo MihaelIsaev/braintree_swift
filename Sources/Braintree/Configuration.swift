@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Configuration {
+public class Configuration {
     private let environment: Environment
     private let timeout: TimeInterval = 60
     private let connectTimeout: TimeInterval = 60

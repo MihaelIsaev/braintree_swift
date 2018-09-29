@@ -11,4 +11,8 @@ import Vapor
 public final class CreditCardAddressOptionsRequest: Content {
     private var parent: CreditCardAddressRequest
     private var updateExisting: Bool
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

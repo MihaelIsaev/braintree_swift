@@ -10,4 +10,8 @@ import Vapor
 
 public final class IndividualAddressRequest: Content {
     private var parent: IndividualRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

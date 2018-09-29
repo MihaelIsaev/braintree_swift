@@ -21,4 +21,8 @@ public final class OAuthConnectUrlRequest: Content {
     
     private var user: OAuthConnectUrlUserRequest
     private var business: OAuthConnectUrlBusinessRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

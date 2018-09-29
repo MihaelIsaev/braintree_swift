@@ -26,4 +26,8 @@ public final class TransactionOptionsRequest: Content {
     private var transactionOptionsAmexRewardsRequest: TransactionOptionsAmexRewardsRequest
     private var transactionOptionsThreeDSecureRequest: TransactionOptionsThreeDSecureRequest
     private var transactionOptionsVenmoRequest: TransactionOptionsVenmoRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

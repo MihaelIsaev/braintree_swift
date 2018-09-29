@@ -13,15 +13,14 @@ public class VisaCheckoutCard: PaymentMethod {
     private var callId: String
     private var cardholderName: String
     private var cardType: String
-    private var createdAt: Date
-    private var customerId: String
+    public var customerId: String
     private var customerLocation: String
     private var expirationMonth: String
     private var expirationYear: String
-    private var isDefault: Bool
+    public var isDefault: Bool?
     private var isVenmoSdk: Bool
     private var isExpired: Bool
-    private var imageUrl: String
+    public var imageUrl: String
     private var last4: String
     private var commercial: String
     private var debit: String
@@ -33,8 +32,13 @@ public class VisaCheckoutCard: PaymentMethod {
     private var countryOfIssuance: String
     private var issuingBank: String
     private var uniqueNumberIdentifier: String
-    private var subscriptions: [Subscription]
-    private var token: String
-    private var updatedAt: Date
+    public var subscriptions: [Subscription]
+    public var token: String
+    private var createdAt: Date?
+    private var updatedAt: Date?
     private var verification: CreditCardVerification
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

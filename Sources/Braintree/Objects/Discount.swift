@@ -9,4 +9,8 @@ import Foundation
 
 public class Discount: Modification {
     
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

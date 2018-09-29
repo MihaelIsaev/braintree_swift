@@ -27,4 +27,8 @@ public final class CreditCardRequest: Content {
     private var paymentMethodToken: String
     private var paymentMethodNonce: String
     private var venmoSdkPaymentMethodCode: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

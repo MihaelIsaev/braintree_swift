@@ -9,13 +9,17 @@ import Foundation
 
 public class VenmoAccount: PaymentMethod {
     public var token: String
-    private var username: String
-    private var venmoUserId: String
-    private var sourceDescription: String
+    public var username: String
+    public var venmoUserId: String
+    public var sourceDescription: String
     public var imageUrl: String
-    private var createdAt: Date
-    private var updatedAt: Date
+    public var createdAt: Date?
+    public var updatedAt: Date?
     public var subscriptions: [Subscription]
     public var customerId: String
-    public var isDefault: Bool
+    public var isDefault: Bool?
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

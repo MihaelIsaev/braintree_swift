@@ -10,4 +10,8 @@ import Vapor
 
 public final class TransparentRedirectRequest: Content {
     private var id: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

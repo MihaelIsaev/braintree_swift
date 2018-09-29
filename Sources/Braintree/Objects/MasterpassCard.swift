@@ -35,4 +35,8 @@ public class MasterpassCard: Codable {
     private var token: String
     private var createdAt: Date
     private var updatedAt: Date
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

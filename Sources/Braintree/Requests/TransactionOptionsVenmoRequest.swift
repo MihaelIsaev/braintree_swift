@@ -11,4 +11,8 @@ import Vapor
 public final class TransactionOptionsVenmoRequest: Content {
     private var parent: TransactionOptionsRequest
     private var profileId: String
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

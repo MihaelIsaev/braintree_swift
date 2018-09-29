@@ -13,4 +13,8 @@ public class VenmoAccountDetails: Codable {
     private var venmoUserId: String
     private var imageUrl: String
     private var sourceDescription: String
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

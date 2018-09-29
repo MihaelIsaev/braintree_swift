@@ -15,4 +15,8 @@ public final class ClientTokenRequest: Content {
     private var version: Int
     private var merchantAccountId: String
     private var optionsRequest: ClientTokenOptionsRequest
+    
+    //    private enum CodingKeys : String, CodingKey {
+    //        case
+    //    }
 }

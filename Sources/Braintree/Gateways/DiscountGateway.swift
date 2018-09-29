@@ -7,9 +7,9 @@
 
 import Foundation
 
-class DiscountGateway {
-    private var http: Http
-    private var configuration: Configuration
+public class DiscountGateway {
+    public var http: Http
+    public var configuration: Configuration
     
     public init(http: Http, configuration: Configuration) {
         self.http = http

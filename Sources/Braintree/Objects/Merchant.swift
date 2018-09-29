@@ -17,4 +17,8 @@ public class Merchant: Codable {
     private var countryName: String
     private var credentials: OAuthCredentials
     private var merchantAccounts: [MerchantAccount]
+    
+//    private enum CodingKeys : String, CodingKey {
+//        case
+//    }
 }

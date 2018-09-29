@@ -9,16 +9,21 @@ import Foundation
 import Vapor
 
 public final class CreditCardOptionsRequest: Content {
-    private var parent: CreditCardRequest
-    private var verificationMerchantAccountId: String
-    private var failOnDuplicatePaymentMethod: Bool
-    private var verifyCard: Bool
-    private var verificationAmount: String
-    private var makeDefault: Bool
-    private var updateExistingToken: String
-    private var venmoSdkSession: String
+    public var verifyCard: Bool?
+    public var verificationAmount: String
+    public var makeDefault: Bool?
+    public var failOnDuplicatePaymentMethod: Bool?
+    public var verificationMerchantAccountId: String
+    public var updateExistingToken: String
+    public var venmoSdkSession: String
     
-    //    private enum CodingKeys : String, CodingKey {
-    //        case
-    //    }
+    private enum CodingKeys : String, CodingKey {
+        case verifyCard = "verify-card"
+        case verificationAmount = "verification-amount"
+        case makeDefault = "make-default"
+        case failOnDuplicatePaymentMethod = "fail-on-duplicate-payment-method"
+        case verificationMerchantAccountId = "verification-merchant-account-id"
+        case updateExistingToken = "update-existing-token"
+        case venmoSdkSession = "venmo-sdk-session"
+    }
 }

@@ -9,26 +9,81 @@ import Foundation
 import Vapor
 
 public final class CreditCardRequest: Content {
-    private var billingAddressRequest: CreditCardAddressRequest
-    private var billingAddressId: String
-    private var deviceData: String
-    private var cardholderName: String
-    private var customerId: String
-    private var cvv: String
-    private var deviceSessionId: String
-    private var fraudMerchantId: String
-    private var expirationDate: String
-    private var expirationMonth: String
-    private var expirationYear: String
-    private var number: String
-    private var optionsRequest: CreditCardOptionsRequest
-    private var parent: CustomerRequest
-    private var token: String
-    private var paymentMethodToken: String
-    private var paymentMethodNonce: String
-    private var venmoSdkPaymentMethodCode: String
+    public var cardholderName: String
+    public var cvv: String
+    public var expirationMonth: String
+    public var expirationYear: String
+    public var expirationDate: String
+    public var number: String
     
-    //    private enum CodingKeys : String, CodingKey {
-    //        case
-    //    }
+    public var customerId: String
+    public var billingAddress: CreditCardAddressRequest
+    public var billingAddressId: String
+    public var deviceData: String
+    public var deviceSessionId: String
+    public var fraudMerchantId: String
+    public var options: CreditCardOptionsRequest
+    public var paymentMethodToken: String
+    public var paymentMethodNonce: String
+    public var venmoSdkPaymentMethodCode: String
+    public var token: String
+    
+    private enum CodingKeys : String, CodingKey {
+        case cardholderName = "cardholder-name"
+        case cvv
+        case expirationMonth = "expiration-month"
+        case expirationYear = "expiration-year"
+        case expirationDate = "expiration-date"
+        case number
+        
+        case customerId = "customer-id"
+        case billingAddress = "billing-address"
+        case billingAddressId = "billing-address-id"
+        case deviceData = "device-data"
+        case deviceSessionId = "device-session-id"
+        case fraudMerchantId = "fraud-merchant-id"
+        case options
+        case paymentMethodToken = "payment-method-token"
+        case paymentMethodNonce = "payment-method-nonce"
+        case venmoSdkPaymentMethodCode = "venmo-sdk-payment-method-code"
+        case token
+    }
+    
+    public init (cardholderName: String,
+                    cvv: String,
+                    expirationMonth: String,
+                    expirationYear: String,
+                    expirationDate: String,
+                    number: String,
+                    
+                    customerId: String,
+                    billingAddress: CreditCardAddressRequest,
+                    billingAddressId: String,
+                    deviceData: String,
+                    deviceSessionId: String,
+                    fraudMerchantId: String,
+                    options: CreditCardOptionsRequest,
+                    paymentMethodToken: String,
+                    paymentMethodNonce: String,
+                    venmoSdkPaymentMethodCode: String,
+                    token: String) {
+        self.cardholderName = cardholderName
+        self.cvv = cvv
+        self.expirationMonth = expirationMonth
+        self.expirationYear = expirationYear
+        self.expirationDate = expirationDate
+        self.number = number
+        
+        self.customerId = customerId
+        self.billingAddress = billingAddress
+        self.billingAddressId = billingAddressId
+        self.deviceData = deviceData
+        self.deviceSessionId = deviceSessionId
+        self.fraudMerchantId = fraudMerchantId
+        self.options = options
+        self.paymentMethodToken = paymentMethodToken
+        self.paymentMethodNonce = paymentMethodNonce
+        self.venmoSdkPaymentMethodCode = venmoSdkPaymentMethodCode
+        self.token = token
+    }
 }

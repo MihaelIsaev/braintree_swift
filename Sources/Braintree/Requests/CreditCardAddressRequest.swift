@@ -9,10 +9,9 @@ import Foundation
 import Vapor
 
 public final class CreditCardAddressRequest: Content {
-    private var parent: CreditCardRequest
-    private var optionsRequest: CreditCardAddressOptionsRequest
+    public var updateExisting: Bool?
     
-    //    private enum CodingKeys : String, CodingKey {
-    //        case
-    //    }
+    private enum CodingKeys : String, CodingKey {
+        case updateExisting = "update-existing"
+    }
 }

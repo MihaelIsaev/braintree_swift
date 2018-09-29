@@ -8,58 +8,39 @@
 import Foundation
 
 public class Address: Codable {
-    var company: String
-    var countryCodeAlpha2: String
-    var countryCodeAlpha3: String
-    var countryCodeNumeric: String
-    var countryName: String
-    var customerId: String
-    var extendedAddress: String
-    var firstName: String
-    var id: String
-    var lastName: String
-    var locality: String
-    var postalCode: String
-    var region: String
-    var streetAddress: String
-    var createdAt: Date?
-    var updatedAt: Date?
+    public var id: String
+    public var customerId: String
+    public var firstName: String
+    public var lastName: String
+    public var company: String
+    public var streetAddress: String
+    public var extendedAddress: String
+    public var locality: String
+    public var region: String
+    public var postalCode: String
+    public var countryCodeAlpha2: String
+    public var countryCodeAlpha3: String
+    public var countryCodeNumeric: String
+    public var countryName: String
+    public var createdAt: Date?
+    public var updatedAt: Date?
     
     private enum CodingKeys : String, CodingKey {
-        case company, countryCodeAlpha2 = "country-code-alpha2", countryCodeAlpha3 = "country-code-alpha3", countryCodeNumeric = "country-code-numeric", countryName = "country-name", customerId = "customer-id", extendedAddress = "extended-address", firstName = "first-name", id, lastName = "last-name", locality, postalCode = "postal-code", region, streetAddress = "street-address", createdAt = "created-at", updatedAt = "updated-at"
-    }
-    
-    init(id: String,
-         company: String,
-         countryCodeAlpha2: String,
-         countryCodeAlpha3: String,
-         countryCodeNumeric: String,
-         countryName: String,
-         customerId: String,
-         extendedAddress: String,
-         firstName: String,
-         lastName: String,
-         locality: String,
-         postalCode: String,
-         region: String,
-         streetAddress: String,
-         createdAt: Date,
-         updatedAt: Date) {
-        self.id = id
-        self.company = company
-        self.countryCodeAlpha2 = countryCodeAlpha2
-        self.countryCodeAlpha3 = countryCodeAlpha3
-        self.countryCodeNumeric = countryCodeNumeric
-        self.countryName = countryName
-        self.customerId = customerId
-        self.extendedAddress = extendedAddress
-        self.firstName = firstName
-        self.lastName = lastName
-        self.locality = locality
-        self.postalCode = postalCode
-        self.region = region
-        self.streetAddress = streetAddress
-        self.createdAt = createdAt
-        self.updatedAt = updatedAt
+        case id
+        case customerId = "customer-id"
+        case firstName = "first-name"
+        case lastName = "last-name"
+        case company
+        case streetAddress = "street-address"
+        case extendedAddress = "extended-address"
+        case locality
+        case region
+        case postalCode = "postal-code"
+        case countryCodeAlpha2 = "country-code-alpha2"
+        case countryCodeAlpha3 = "country-code-alpha3"
+        case countryCodeNumeric = "country-code-numeric"
+        case countryName = "country-name"
+        case createdAt = "created-at"
+        case updatedAt = "updated-at"
     }
 }

@@ -8,17 +8,25 @@
 import Foundation
 
 public class ApplePayDetails: Codable {
-    private var cardType: String
-    private var paymentInstrumentName: String
-    private var sourceDescription: String
-    private var cardholderName: String
-    private var expirationMonth: String
-    private var expirationYear: String
-    private var last4: String
-    private var token: String
-    private var imageUrl: String
+    public var cardType: String
+    public var paymentInstrumentName: String
+    public var sourceDescription: String
+    public var cardholderName: String
+    public var expirationMonth: String
+    public var expirationYear: String
+    public var token: String
+    public var last4: String
+    public var imageUrl: String
     
-//    private enum CodingKeys : String, CodingKey {
-//        case
-//    }
+    private enum CodingKeys : String, CodingKey {
+        case cardType = "card-type"
+        case paymentInstrumentName = "payment-instrument-name"
+        case sourceDescription = "source-description"
+        case cardholderName = "cardholder-name"
+        case expirationMonth = "expiration-month"
+        case expirationYear = "expiration-year"
+        case token
+        case last4 = "last-4"
+        case imageUrl = "image-url"
+    }
 }

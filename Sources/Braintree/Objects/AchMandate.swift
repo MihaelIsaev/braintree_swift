@@ -8,10 +8,11 @@
 import Foundation
 
 public class AchMandate: Codable {
-    private var text: String
-    private var acceptedAt: Date
+    public var text: String
+    public var acceptedAt: Date
     
     private enum CodingKeys : String, CodingKey {
-        case text, acceptedAt = "accepted-at"
+        case text
+        case acceptedAt = "accepted-at"
     }
 }

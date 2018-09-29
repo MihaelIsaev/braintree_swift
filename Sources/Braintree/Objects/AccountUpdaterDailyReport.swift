@@ -12,6 +12,7 @@ public class AccountUpdaterDailyReport: Codable {
     public var reportUrl: String
     
     private enum CodingKeys : String, CodingKey {
-        case reportDate = "report-date", reportUrl = "report-url"
+        case reportDate = "report-date"
+        case reportUrl = "report-url"
     }
 }

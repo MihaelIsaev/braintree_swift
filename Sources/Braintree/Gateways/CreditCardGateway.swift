@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Vapor
 
 public class CreditCardGateway {
     public var http: Http
@@ -14,5 +15,9 @@ public class CreditCardGateway {
     public init(http: Http, configuration: Configuration) {
         self.http = http
         self.configuration = configuration
+    }
+    
+    public func create(request: CreditCardRequest) throws -> Future<CreditCard> {
+        return try http.post(try configuration.merchantPath() + "/payment_methods", payload: request)
     }
 }

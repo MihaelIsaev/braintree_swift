@@ -8,129 +8,126 @@
 import Foundation
 import Vapor
 
-class BraintreeGateway {
-    public var configuration: Configuration
+public class BraintreeGateway {
+    var configuration: Configuration
     //private var graphQLClient: GraphQLClient
-    public var http: Http
+    var http: Http
     
     /// Instantiates a BraintreeGateway. Use the values provided by Braintree
-    init(container: Container, environment: Environment, merchantId: String, publicKey: String, privateKey: String) throws {
-        self.configuration = try Configuration(environment: environment,
-                                                              merchantId: merchantId,
-                                                              publicKey: publicKey,
-                                                              privateKey: privateKey)
+    init(container: Container, configuration: Configuration) {
+        self.configuration = configuration
         self.http = Http(container: container, configuration: configuration)
     }
     
-    var addOn: AddOnGateway {
+    public var addOn: AddOnGateway {
         return AddOnGateway(http: http, configuration: configuration)
     }
     
-    var address: AddressGateway {
+    public var address: AddressGateway {
         return AddressGateway(http: http, configuration: configuration)
     }
     
-    var clientToken: ClientTokenGateway {
+    public var clientToken: ClientTokenGateway {
         return ClientTokenGateway(http: http, configuration: configuration)
     }
     
-    var creditCard: CreditCardGateway {
+    public var creditCard: CreditCardGateway {
         return CreditCardGateway(http: http, configuration: configuration)
     }
     
-    var creditCardVerification: CreditCardVerificationGateway {
+    public var creditCardVerification: CreditCardVerificationGateway {
         return CreditCardVerificationGateway(http: http, configuration: configuration)
     }
     
-    var usBankAccountVerification: UsBankAccountVerificationGateway {
+    public var usBankAccountVerification: UsBankAccountVerificationGateway {
         return UsBankAccountVerificationGateway(http: http, configuration: configuration)
     }
     
-    var customer: CustomerGateway {
+    public var customer: CustomerGateway {
         return CustomerGateway(http: http, configuration: configuration)
     }
     
-    var discount: DiscountGateway {
+    public var discount: DiscountGateway {
         return DiscountGateway(http: http, configuration: configuration)
     }
     
-    var dispute: DisputeGateway {
+    public var dispute: DisputeGateway {
         return DisputeGateway(http: http, configuration: configuration)
     }
     
-    var paymentMethod: PaymentMethodGateway {
+    public var paymentMethod: PaymentMethodGateway {
         return PaymentMethodGateway(http: http, configuration: configuration)
     }
     
-    var paymentMethodNonce: PaymentMethodNonceGateway {
+    public var paymentMethodNonce: PaymentMethodNonceGateway {
         return PaymentMethodNonceGateway(http: http, configuration: configuration)
     }
     
-    var paypalAccount: PayPalAccountGateway {
+    public var paypalAccount: PayPalAccountGateway {
         return PayPalAccountGateway(http: http, configuration: configuration)
     }
     
-    var usBankAccount: UsBankAccountGateway {
+    public var usBankAccount: UsBankAccountGateway {
         return UsBankAccountGateway(http: http, configuration: configuration)
     }
     
-    var idealPayment: IdealPaymentGateway {
+    public var idealPayment: IdealPaymentGateway {
         return IdealPaymentGateway(http: http, configuration: configuration)
     }
     
-    var plan: PlanGateway {
+    public var plan: PlanGateway {
         return PlanGateway(http: http, configuration: configuration)
     }
     
-    var settlementBatchSummary: SettlementBatchSummaryGateway {
+    public var settlementBatchSummary: SettlementBatchSummaryGateway {
         return SettlementBatchSummaryGateway(http: http, configuration: configuration)
     }
     
-    var subscription: SubscriptionGateway {
+    public var subscription: SubscriptionGateway {
         return SubscriptionGateway(http: http, configuration: configuration)
     }
     
-    var transaction: TransactionGateway {
+    public var transaction: TransactionGateway {
         return TransactionGateway(http: http, configuration: configuration)
     }
     
-    var transactionLineItem: TransactionLineItemGateway {
+    public var transactionLineItem: TransactionLineItemGateway {
         return TransactionLineItemGateway(http: http, configuration: configuration)
     }
     
-    var transparentRedirect: TransparentRedirectGateway {
+    public var transparentRedirect: TransparentRedirectGateway {
         return TransparentRedirectGateway(http: http, configuration: configuration)
     }
     
-    var webhookNotification: WebhookNotificationGateway {
+    public var webhookNotification: WebhookNotificationGateway {
         return WebhookNotificationGateway(http: http, configuration: configuration)
     }
     
-    var webhookTesting: WebhookTestingGateway {
+    public var webhookTesting: WebhookTestingGateway {
         return WebhookTestingGateway(http: http, configuration: configuration)
     }
     
-    var merchantAccount: MerchantAccountGateway {
+    public var merchantAccount: MerchantAccountGateway {
         return MerchantAccountGateway(http: http, configuration: configuration)
     }
     
-    var merchant: MerchantGateway {
+    public var merchant: MerchantGateway {
         return MerchantGateway(http: http, configuration: configuration)
     }
     
-    var oauth: OAuthGateway {
+    public var oauth: OAuthGateway {
         return OAuthGateway(http: http, configuration: configuration)
     }
     
-    var testing: TestingGateway {
+    public var testing: TestingGateway {
         return TestingGateway(http: http, configuration: configuration)
     }
     
-    var documentUpload: DocumentUploadGateway {
+    public var documentUpload: DocumentUploadGateway {
         return DocumentUploadGateway(http: http, configuration: configuration)
     }
     
-    var report: ReportGateway {
+    public var report: ReportGateway {
         return ReportGateway(http: http, configuration: configuration)
     }
 }

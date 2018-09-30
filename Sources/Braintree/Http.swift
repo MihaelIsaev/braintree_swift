@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import NIO
+import Vapor
 import XMLParsing
 
 public protocol BraintreeContent: Codable {
@@ -27,10 +27,10 @@ public class Http {
         case delete, get, post, put
     }
     
-    private var container: EventLoopGroup
+    private var container: Container
     public var configuration: Configuration
     
-    public init (container: EventLoopGroup, configuration: Configuration) {
+    public init (container: Container, configuration: Configuration) {
         self.container = container
         self.configuration = configuration
     }

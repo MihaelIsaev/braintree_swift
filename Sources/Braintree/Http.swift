@@ -35,7 +35,7 @@ public class Http {
         self.configuration = configuration
     }
     
-    public func get<R>(_ url: String) throws -> Future<R> where R: BraintreeContent {
+    public func get<R>(_ url: String) throws -> Future<R> where R: Codable {
         let request = Request(url: configuration.baseURL + url, method: .GET, headers: try headers(), body: nil)
         return try send(request).map { response in
             self.configuration.logger.log(.info, message: "\(Date()) \(request.method.rawValue) \(url)")
@@ -49,7 +49,7 @@ public class Http {
         }
     }
     
-    public func post<P, R>(_ url: String, payload: P) throws -> Future<R> where P: BraintreeContent, R: BraintreeContent {
+    public func post<P, R>(_ url: String, payload: P) throws -> Future<R> where P: BraintreeContent, R: Codable {
         let payload = try encode(payload)
         let request = Request(url: configuration.baseURL + url, method: .POST, headers: try headers(), body: payload)
         return try send(request).map { response in
@@ -64,7 +64,7 @@ public class Http {
         }
     }
     
-    public func put<P, R>(_ url: String, payload: P) throws -> Future<R> where P: BraintreeContent, R: BraintreeContent {
+    public func put<P, R>(_ url: String, payload: P) throws -> Future<R> where P: BraintreeContent, R: Codable {
         let payload = try encode(payload)
         let request = Request(url: configuration.baseURL + url, method: .PUT, headers: try headers(), body: payload)
         return try send(request).map { response in
@@ -79,7 +79,7 @@ public class Http {
         }
     }
     
-    public func delete<R>(_ url: String) throws -> Future<R> where R: BraintreeContent {
+    public func delete<R>(_ url: String) throws -> Future<R> where R: Codable {
         let request = Request(url: configuration.baseURL + url, method: .DELETE, headers: try headers(), body: nil)
         return try send(request).map { response in
             self.configuration.logger.log(.info, message: "\(Date()) \(request.method.rawValue) \(url)")
@@ -100,7 +100,7 @@ public class Http {
         return try JSONSerialization.data(withJSONObject: dict, options: JSONSerialization.WritingOptions.init(rawValue: 0))
     }
     
-    private func decode<T>(response: Response) throws -> T where T: BraintreeContent {
+    private func decode<T>(response: Response) throws -> T where T: Codable {
         guard let responseData = response.data else {
             throw BraintreeError(BraintreeErrorCase.server, reason: "Response data cannot be nil")
         }
@@ -156,6 +156,7 @@ public class Http {
         }
     }
     
+    //TODO: use standard Vapor's client instead
     private func send(_ req: Request) throws -> EventLoopFuture<Response> {
         guard let url = URL(string: req.url) else { throw BraintreeError(BraintreeErrorCase.server, reason: "") }
         var urlReq = URLRequest(url: url)

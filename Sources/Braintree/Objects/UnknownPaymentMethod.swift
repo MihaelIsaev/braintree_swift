@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class UnknownPaymentMethod: PaymentMethod {
+public final class UnknownPaymentMethod: PaymentMethod {
     public static var key: String = ""
     
     public var token: String

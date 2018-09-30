@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class DisputeTransaction: BraintreeContent {
+public final class DisputeTransaction: BraintreeContent {
     public static var key: String = ""
     
     private var amount: Double

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class ThreeDSecureInfo: BraintreeContent {
+public final class ThreeDSecureInfo: BraintreeContent {
     public static var key: String = ""
     
     private var liabilityShifted: Bool

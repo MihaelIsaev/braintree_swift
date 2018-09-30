@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class WebhookNotification: BraintreeContent {
+public final class WebhookNotification: BraintreeContent {
     public static var key: String = ""
     
     public enum Kind: String, Codable {

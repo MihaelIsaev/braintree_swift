@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class SamsungPayCardDetails: BraintreeContent {
+public final class SamsungPayCardDetails: BraintreeContent {
     public static var key: String = ""
     
     private var bin: String

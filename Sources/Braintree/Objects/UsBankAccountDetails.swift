@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class UsBankAccountDetails: BraintreeContent {
+public final class UsBankAccountDetails: BraintreeContent {
     public static var key: String = ""
     
     private var routingNumber: String

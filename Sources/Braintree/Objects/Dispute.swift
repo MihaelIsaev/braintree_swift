@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Dispute: BraintreeContent {
+public final class Dispute: BraintreeContent {
     public static var key: String = ""
     
     public enum Status: Int, Codable {

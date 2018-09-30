@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class FundingDetails: BraintreeContent {
+public final class FundingDetails: BraintreeContent {
     public static var key: String = ""
     
     private var destination: MerchantAccount.FundingDestination

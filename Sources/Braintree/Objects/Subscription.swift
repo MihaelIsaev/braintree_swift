@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Subscription: BraintreeContent {
+public final class Subscription: BraintreeContent {
     public static var key: String = ""
     
     public enum DurationUnit: Int, Codable {

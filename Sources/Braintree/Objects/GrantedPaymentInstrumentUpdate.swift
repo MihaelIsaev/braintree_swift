@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class GrantedPaymentInstrumentUpdate: BraintreeContent {
+public final class GrantedPaymentInstrumentUpdate: BraintreeContent {
     public static var key: String = ""
     
     private var grantOwnerMerchantId: String

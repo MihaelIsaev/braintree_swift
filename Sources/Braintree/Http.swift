@@ -9,7 +9,7 @@ import Foundation
 import Vapor
 import XMLParsing
 
-public protocol BraintreeContent: Codable {
+public protocol BraintreeContent: Content {
     static var key: String { get }
 }
 
@@ -104,15 +104,7 @@ public class Http {
         guard let responseData = response.data else {
             throw BraintreeError(BraintreeErrorCase.server, reason: "Response data cannot be nil")
         }
-        guard var responseString = String(data: responseData, encoding: .utf8) else {
-            throw BraintreeError(BraintreeErrorCase.server, reason: "Response data cannot be decoded")
-        }
-        responseString = responseString.replacingOccurrences(of: "<\(T.key)>", with: "")
-        responseString = responseString.replacingOccurrences(of: "</\(T.key)>", with: "")
-        guard let modifiedResponseData = responseString.data(using: .utf8) else {
-            throw BraintreeError(BraintreeErrorCase.server, reason: "Unable to modify response data to decode it properly")
-        }
-        return try XMLDecoder().decode(T.self, from: modifiedResponseData)
+        return try XMLDecoder().decode(T.self, from: responseData)
     }
     
     private func headers() throws -> [String: String] {
@@ -121,7 +113,7 @@ public class Http {
         headers["User-Agent"] = "Braintree Swift " + Configuration.version
         headers["X-ApiVersion"] = Configuration.apiVersion
         headers["Authorization"] = try authorizationHeader()
-        //headers["Accept-Encoding"] = "gzip"
+        headers["Accept-Encoding"] = "gzip"
         headers["Content-Type"] = "application/json"
         return headers
     }
@@ -186,7 +178,7 @@ public class Http {
                 return
             }
             promise.succeed(result: Response(httpResponse, data: data))
-        }.resume()
+            }.resume()
         return promise.futureResult
     }
 }

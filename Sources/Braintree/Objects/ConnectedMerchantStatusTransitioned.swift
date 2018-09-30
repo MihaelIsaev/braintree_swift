@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class ConnectedMerchantStatusTransitioned: BraintreeContent {
+public final class ConnectedMerchantStatusTransitioned: BraintreeContent {
     public static var key: String = ""
     
     private var merchantPublicId: String

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Customer: BraintreeContent {
+public final class Customer: BraintreeContent {
     public static var key: String = ""
     
     private var createdAt: Date

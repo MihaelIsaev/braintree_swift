@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class UsBankAccountVerification: BraintreeContent {
+public final class UsBankAccountVerification: BraintreeContent {
     public static var key: String = ""
     
     public enum Status: String, Codable {

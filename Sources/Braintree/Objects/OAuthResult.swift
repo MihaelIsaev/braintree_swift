@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class OAuthResult: BraintreeContent {
+public final class OAuthResult: BraintreeContent {
     public static var key: String = ""
     
     private var result: Bool

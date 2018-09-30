@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class AuthorizationAdjustment: BraintreeContent {
+public final class AuthorizationAdjustment: BraintreeContent {
     public static var key: String = ""
     
     private var amount: Double

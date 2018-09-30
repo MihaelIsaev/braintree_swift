@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class SearchCriteria: BraintreeContent {
+public final class SearchCriteria: BraintreeContent {
     public static var key: String = ""
     
     

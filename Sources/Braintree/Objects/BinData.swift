@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class BinData: BraintreeContent {
+public final class BinData: BraintreeContent {
     public static var key: String = ""
     
     private var commercial: String

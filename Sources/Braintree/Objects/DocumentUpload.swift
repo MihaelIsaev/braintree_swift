@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class DocumentUpload: BraintreeContent {
+public final class DocumentUpload: BraintreeContent {
     public static var key: String = ""
     
     public enum Kind: String, Codable {

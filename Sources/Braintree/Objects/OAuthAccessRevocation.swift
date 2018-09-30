@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class OAuthAccessRevocation: BraintreeContent {
+public final class OAuthAccessRevocation: BraintreeContent {
     public static var key: String = ""
     
     private var merchantId: String

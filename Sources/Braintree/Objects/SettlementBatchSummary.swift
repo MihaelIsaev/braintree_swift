@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class SettlementBatchSummary: BraintreeContent {
+public final class SettlementBatchSummary: BraintreeContent {
     public static var key: String = ""
     
     private var records: [[String: String]]

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class FacilitatedDetails: BraintreeContent {
+public final class FacilitatedDetails: BraintreeContent {
     public static var key: String = ""
     
     private var merchantId: String

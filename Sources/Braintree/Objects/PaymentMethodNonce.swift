@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class PaymentMethodNonce: BraintreeContent {
+public final class PaymentMethodNonce: BraintreeContent {
     public static var key: String = ""
     
     private var isDefault: Bool

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class IbanBankAccount: BraintreeContent {
+public final class IbanBankAccount: BraintreeContent {
     public static var key: String = ""
     
     private var accountHolderName: String

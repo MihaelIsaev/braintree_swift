@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Descriptor: BraintreeContent {
+public final class Descriptor: BraintreeContent {
     public static var key: String = ""
     
     private var name: String

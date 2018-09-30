@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class TransactionLevelFeeReportRow: BraintreeContent {
+public final class TransactionLevelFeeReportRow: BraintreeContent {
     public static var key: String = ""
     
     // Shared fields.

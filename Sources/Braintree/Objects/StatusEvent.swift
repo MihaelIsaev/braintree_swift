@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class StatusEvent: BraintreeContent {
+public final class StatusEvent: BraintreeContent {
     public static var key: String = ""
     
     private var amount: Double

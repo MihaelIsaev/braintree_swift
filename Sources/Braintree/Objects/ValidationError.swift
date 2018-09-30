@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class ValidationError: BraintreeContent {
+public final class ValidationError: BraintreeContent {
     public static var key: String = ""
     
     private var attribute: String

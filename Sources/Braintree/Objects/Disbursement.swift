@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Disbursement: BraintreeContent {
+public final class Disbursement: BraintreeContent {
     public static var key: String = ""
     
     public enum DisbursementType: Int, Codable {

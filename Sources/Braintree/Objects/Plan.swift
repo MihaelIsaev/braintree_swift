@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Plan: BraintreeContent {
+public final class Plan: BraintreeContent {
     public static var key: String = ""
     
     public enum DurationUnit: Int, Codable {

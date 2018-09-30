@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class OAuthCredentials: BraintreeContent {
+public final class OAuthCredentials: BraintreeContent {
     public static var key: String = ""
     
     private var accessToken: String

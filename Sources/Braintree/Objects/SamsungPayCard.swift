@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class SamsungPayCard: PaymentMethod {
+public final class SamsungPayCard: PaymentMethod {
     public static var key: String = ""
     
     private var billingAddress: Address

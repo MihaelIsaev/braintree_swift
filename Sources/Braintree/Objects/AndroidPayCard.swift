@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class AndroidPayCard: PaymentMethod {
+public final class AndroidPayCard: PaymentMethod {
     public static var key: String = ""
     
     public var bin: String

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class ApplePayDetails: BraintreeContent {
+public final class ApplePayDetails: BraintreeContent {
     public static var key: String = ""
     
     public var cardType: String

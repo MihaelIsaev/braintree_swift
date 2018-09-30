@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class VenmoAccountDetails: BraintreeContent {
+public final class VenmoAccountDetails: BraintreeContent {
     public static var key: String = ""
     
     private var token: String

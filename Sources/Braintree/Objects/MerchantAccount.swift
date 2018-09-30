@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class MerchantAccount: BraintreeContent {
+public final class MerchantAccount: BraintreeContent {
     public static var key: String = ""
     
     public enum Status: Int, Codable {

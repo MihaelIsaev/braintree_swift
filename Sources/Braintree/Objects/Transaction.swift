@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Transaction: BraintreeContent {
+public final class Transaction: BraintreeContent {
     public static var key: String = ""
     
     public enum CreatedUsing: String, Codable {

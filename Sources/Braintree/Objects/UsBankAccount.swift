@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class UsBankAccount: PaymentMethod {
+public final class UsBankAccount: PaymentMethod {
     public static var key: String = ""
     
     private var routingNumber: String

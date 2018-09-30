@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class SandboxValues {
+public final class SandboxValues {
     public enum CreditCardNumber: String, Codable {
         case visa = "4111111111111111"
         case mastercard = "5555555555554444"

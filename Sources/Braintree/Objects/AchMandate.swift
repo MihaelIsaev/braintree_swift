@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class AchMandate: BraintreeContent {
+public final class AchMandate: BraintreeContent {
     public static var key: String = ""
     
     public var text: String

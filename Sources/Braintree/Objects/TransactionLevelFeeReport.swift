@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class TransactionLevelFeeReport: BraintreeContent {
+public final class TransactionLevelFeeReport: BraintreeContent {
     public static var key: String = ""
     
     private var rows: [TransactionLevelFeeReportRow] = []

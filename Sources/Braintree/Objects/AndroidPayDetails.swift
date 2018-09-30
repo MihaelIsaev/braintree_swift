@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class AndroidPayDetails: BraintreeContent {
+public final class AndroidPayDetails: BraintreeContent {
     public static var key: String = ""
     
     public var bin: String

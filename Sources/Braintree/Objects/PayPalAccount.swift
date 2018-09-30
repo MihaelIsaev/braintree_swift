@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class PayPalAccount: BraintreeContent {
+public final class PayPalAccount: BraintreeContent {
     public static var key: String = ""
     
     private var email: String

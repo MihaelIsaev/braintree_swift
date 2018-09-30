@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class EuropeBankAccount: BraintreeContent {
+public final class EuropeBankAccount: BraintreeContent {
     public static var key: String = ""
     
     private var token: String

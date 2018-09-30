@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class BusinessDetails: BraintreeContent {
+public final class BusinessDetails: BraintreeContent {
     public static var key: String = ""
     
     private var dbaName: String

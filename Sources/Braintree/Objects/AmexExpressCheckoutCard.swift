@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class AmexExpressCheckoutCard: PaymentMethod {
+public final class AmexExpressCheckoutCard: PaymentMethod {
     public static var key: String = ""
     
     public var token: String

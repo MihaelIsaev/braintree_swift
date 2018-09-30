@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class VisaCheckoutCard: PaymentMethod {
+public final class VisaCheckoutCard: PaymentMethod {
     public static var key: String = ""
     
     private var billingAddress: Address

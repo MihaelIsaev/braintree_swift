@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Modification: BraintreeContent {
+public final class Modification: BraintreeContent {
     public static var key: String = ""
     
     public var amount: Double?

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class MasterpassCardDetails: BraintreeContent {
+public final class MasterpassCardDetails: BraintreeContent {
     public static var key: String = ""
     
     private var bin: String

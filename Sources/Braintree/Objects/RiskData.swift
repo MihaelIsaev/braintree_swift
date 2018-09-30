@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class RiskData: BraintreeContent {
+public final class RiskData: BraintreeContent {
     public static var key: String = ""
     
     private var id: String

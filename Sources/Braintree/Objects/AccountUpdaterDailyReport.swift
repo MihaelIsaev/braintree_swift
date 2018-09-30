@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class AccountUpdaterDailyReport: BraintreeContent {
+public final class AccountUpdaterDailyReport: BraintreeContent {
     public static var key: String = ""
     
     public var reportDate: Date?

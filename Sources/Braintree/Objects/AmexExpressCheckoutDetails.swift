@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class AmexExpressCheckoutDetails: BraintreeContent {
+public final class AmexExpressCheckoutDetails: BraintreeContent {
     public static var key: String = ""
     
     public var token: String

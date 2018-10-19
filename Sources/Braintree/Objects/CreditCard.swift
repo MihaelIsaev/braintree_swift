@@ -124,7 +124,7 @@ public final class CreditCard: BraintreeContent {
         case imageUrl = "image-url"
     }
     
-    public var xpirationDate: String {
+    public var expirationDate: String {
         return expirationMonth + "/" + expirationYear
     }
     

@@ -18,6 +18,6 @@ public class AddOnGateway {
     }
     
     public func all() throws -> Future<[AddOn]> {
-        return try http.get("/add_ons")
+        return try http._getArray(try configuration.merchantPath() + "/add_ons")
     }
 }

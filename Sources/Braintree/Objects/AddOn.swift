@@ -8,7 +8,7 @@
 import Foundation
 
 public final class AddOn: BraintreeContent {
-    public static var key: String = ""
+    public static var key: String = "add-ons"
     
     public var amount: Double?
     public var createdAt: Date?
@@ -24,6 +24,15 @@ public final class AddOn: BraintreeContent {
     public var updatedAt: Date?
     
     private enum CodingKeys : String, CodingKey {
-        case amount, createdAt = "created-at", currentBillingCycle = "current-billing-cycle", description, id, kind, merchantId = "merchant-id", name, neverExpires = "never-expires", numberOfBillingCycles = "number-of-billing-cycles", quantity, updatedAt = "updated-at"
+        case amount
+        case createdAt = "created-at"
+        case currentBillingCycle = "current-billing-cycle"
+        case description, id, kind
+        case merchantId = "merchant-id"
+        case name
+        case neverExpires = "never-expires"
+        case numberOfBillingCycles = "number-of-billing-cycles"
+        case quantity
+        case updatedAt = "updated-at"
     }
 }

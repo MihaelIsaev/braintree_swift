@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Vapor
 
 public class TransactionLineItemGateway {
     public var http: Http

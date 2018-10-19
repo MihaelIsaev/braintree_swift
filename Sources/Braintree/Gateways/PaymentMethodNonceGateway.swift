@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Vapor
 
 public class PaymentMethodNonceGateway {
     public var http: Http

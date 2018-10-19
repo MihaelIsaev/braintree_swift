@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Vapor
 
 public class TransparentRedirectGateway {
     public var http: Http

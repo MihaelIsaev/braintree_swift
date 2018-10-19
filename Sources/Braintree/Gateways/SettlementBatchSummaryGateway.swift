@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Vapor
 
 public class SettlementBatchSummaryGateway {
     public var http: Http

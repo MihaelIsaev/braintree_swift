@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Vapor
 
 public class MerchantGateway {
     public var http: Http

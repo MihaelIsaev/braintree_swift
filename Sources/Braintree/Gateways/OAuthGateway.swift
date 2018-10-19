@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Vapor
 
 public class OAuthGateway {
     public var http: Http

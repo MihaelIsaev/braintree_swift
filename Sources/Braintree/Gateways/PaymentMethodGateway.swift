@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Vapor
 
 public class PaymentMethodGateway {
     public var http: Http

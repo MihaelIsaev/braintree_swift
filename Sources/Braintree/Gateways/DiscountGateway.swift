@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Vapor
 
 public class DiscountGateway {
     public var http: Http

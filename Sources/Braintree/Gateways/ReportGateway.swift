@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Vapor
 
 public class ReportGateway {
     public var http: Http

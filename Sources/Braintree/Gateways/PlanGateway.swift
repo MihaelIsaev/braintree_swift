@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Vapor
 
 public class PlanGateway {
     public var http: Http

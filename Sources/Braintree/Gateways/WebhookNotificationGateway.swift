@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Vapor
 
 public class WebhookNotificationGateway {
     public var http: Http

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Vapor
 
 public class DisputeGateway {
     public var http: Http

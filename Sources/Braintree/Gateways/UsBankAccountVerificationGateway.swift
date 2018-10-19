@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Vapor
 
 public class UsBankAccountVerificationGateway {
     public var http: Http

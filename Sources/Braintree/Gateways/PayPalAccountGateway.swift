@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Vapor
 
 public class PayPalAccountGateway {
     public var http: Http

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Vapor
 
 public class WebhookTestingGateway {
     public var http: Http

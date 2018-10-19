@@ -8,13 +8,14 @@
 import Foundation
 
 public final class ClientTokenOptionsRequest: BraintreeContent {
-    public static var key: String = ""
-    private var makeDefault: Bool
-    private var verifyCard: Bool
-    private var failOnDuplicatePaymentMethod: Bool
-    private var parent: ClientTokenRequest
+    public static var key: String = "client-token-options"
+    public var makeDefault: Bool?
+    public var verifyCard: Bool?
+    public var failOnDuplicatePaymentMethod: Bool?
     
-    //    private enum CodingKeys : String, CodingKey {
-    //        case
-    //    }
+    private enum CodingKeys : String, CodingKey {
+        case makeDefault = "make-default"
+        case verifyCard = "verify-card"
+        case failOnDuplicatePaymentMethod = "fail-on-duplicate-payment-method"
+    }
 }

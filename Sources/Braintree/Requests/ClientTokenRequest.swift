@@ -8,15 +8,18 @@
 import Foundation
 
 public final class ClientTokenRequest: BraintreeContent {
-    public static var key: String = ""
+    public static var key: String = "client-token"
     static var defaultVersion = 2
     
-    private var customerId: String
-    private var version: Int
-    private var merchantAccountId: String
-    private var optionsRequest: ClientTokenOptionsRequest
+    public var customerId: String?
+    public var version: Int
+    public var merchantAccountId: String
+    public var optionsRequest: ClientTokenOptionsRequest?
     
-    //    private enum CodingKeys : String, CodingKey {
-    //        case
-    //    }
+    private enum CodingKeys : String, CodingKey {
+        case customerId = "customer-id"
+        case version
+        case merchantAccountId = "merchant-account-id"
+        case optionsRequest = "options"
+    }
 }

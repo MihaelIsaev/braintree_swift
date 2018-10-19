@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/vapor/core.git",
         "state": {
           "branch": null,
-          "revision": "eb876a758733166a4fb20f3f0a17b480c5ea563e",
-          "version": "3.4.3"
+          "revision": "96ce86ebf9198328795c4b9cb711489460be083c",
+          "version": "3.4.4"
         }
       },
       {
@@ -42,8 +42,8 @@
         "repositoryURL": "https://github.com/vapor/http.git",
         "state": {
           "branch": null,
-          "revision": "9e3eff9dfa4df7fc282bf27f801c72b3ffbfd984",
-          "version": "3.1.4"
+          "revision": "272b22be8cb3364e42a4701c2e0676e37480ec5a",
+          "version": "3.1.5"
         }
       },
       {
@@ -107,6 +107,15 @@
           "branch": null,
           "revision": "37760e9a52030bb9011972c5213c3350fa9d41fd",
           "version": "1.0.0"
+        }
+      },
+      {
+        "package": "SWXMLHash",
+        "repositoryURL": "https://github.com/drmohundro/SWXMLHash.git",
+        "state": {
+          "branch": null,
+          "revision": "0ce63a93a455adb3cd5e4c55f78f1232a590a5a5",
+          "version": "4.7.2"
         }
       },
       {

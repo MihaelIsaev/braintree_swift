@@ -8,7 +8,7 @@
 import Foundation
 
 public final class Address: BraintreeContent {
-    public static var key: String = ""
+    public static var key: String = "address"
     
     public var id: String
     public var customerId: String

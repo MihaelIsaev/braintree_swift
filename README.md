@@ -1,11 +1,11 @@
 # How to install
 
-### Edit your `Package.swift`
+#### Edit your `Package.swift`
 ```swift
 .package(url: "https://github.com/MihaelIsaev/braintree_swift", from: "0.1.0"),
 ```
 And add `"Braintree"` in targets.
-### Edit yoru `configure.swift`
+#### Edit your `configure.swift`
 First of all import the lib
 ```swift
 import Braintree

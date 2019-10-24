@@ -12,7 +12,7 @@ let package = Package(
     dependencies: [
         // 💧 A server-side Swift web framework.
         .package(url: "https://github.com/vapor/vapor.git", from:"3.0.0"),
-        .package(url: "https://github.com/MihaelIsaev/XMLParsing.git", .branch("master")),
+        .package(url: "https://github.com/MihaelIsaev/XMLParsing.git", from: "0.1.0"),
         .package(url: "https://github.com/drmohundro/SWXMLHash.git", from: "4.0.0")
         ],
     targets: [

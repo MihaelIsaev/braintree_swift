@@ -1,3 +1,5 @@
+<p align="center"><a href="https://discord.gg/q5wCPYv">SWIFT.STREAM COMMUNITY IN DISCORD</a></p>
+
 # How to install
 
 #### Edit your `Package.swift`
